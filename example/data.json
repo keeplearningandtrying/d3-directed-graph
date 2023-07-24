@@ -1,0 +1,3489 @@
+{
+  "papers":[
+    {
+      "id":"adaptive-targeting",
+      "title":"Adaptive Targeting for Online Advertisement",
+      "year":"2015",
+      "authors":["Andrey Pepelyshev","Yuri Staroselskiy","Anatoly Zhigljavsky"],
+      "problematic":"Making fast decisions on whether to show a given ad to a particular user based on information extracted from big data sets containing records of previous impressions, clicks and subsequent purchases.",
+      "solution":"Strategies for maximizing the click-through rate and provide some results of statistical analysis of real data",
+      "references":["massive-datasets","web-scale-user-targ","onl-ad-industry","greedy-approx-gbm","sponsored-search","mult-dim-maj","ftrl-mirror-descent","sup-mult-dim-scale","organic-vs-spons-search"]
+    },
+    {
+      "id":"adaptive-bidding",
+      "title":"Adaptive Bidding for Display Advertising",
+      "year":"2009",
+      "authors":["Arpita Ghosh","Benjamin I.P. Rubinstein","Sergei Vassilvitskii","Martin Zinkevitch"],
+      "keywords":["online advertisement","real-time bidding","adaptive targeting","big data","click through rate"],
+      "problematic":"The bidding agent must acquire a given number of impressions with a given target spend, when the highest external bid in the marketplace is drawn from an unknown distribution P. The quantity and spend constraints arise from the fact that display ads are usually sold on a CPM basis.",
+      "solution":"Consideration of both a full-information setting where the winning price in each auction is announced publicly, and the partially observable setting where only the winner obtains information about the distribution. The latter algorithm perfoms nearly as well as the first despite the penalty incurred during learning.",
+      "references":["finite-mab","greedy-keyword","asym-min-char","weighted-maj","conv-prog"]
+    },
+    {
+      "id":"ads-tl",
+      "title":"Machine learning for targeted display advertising: Transfer learning in action",
+      "year":"2013",
+      "authors":["Claudia Perlich","Brian Dalessandro","Ori Stitelman","Troy Raeder","Foster Provost"],
+      "problematic":"Acquiring sufficient data for training from the ideal sampling distribution is prohibitively expensive.",
+      "solution":"Design of a multi-stage transfer learning system, highlighting the problem formulation aspects.",
+      "references":["rare-event-rates","beat-mach","classification-imbalance","lscale-sgd","stacked-reg","ls-behave-targ","forget-click","reg-mtl","adp-fraud","mtl-hier-bayes","mech-turk","mult-comp-induct","find-right-cons","surv-transf","behave-targ","lin-bid","soc-net-privacy","applied-ml","design-princ-mass","data-enh-pred","oda-brow-conv","feat-hash","class-dict-tree-induc","mtl-sample-bias","mtl-dirichlet-priors","eval-class-samp-sel-bias"]
+    },
+    {
+      "id":"adx-mec",
+      "title":"Ad Exchange: Intention Driven Auction Mechanisms for Mediating Between Publishers and Advertisers",
+      "year":"2015",
+      "authors":["Rina Azoulay","Esther David"],
+      "problematic":"None of the previously proposed solutions fully take into account the preferences of the publishers.",
+      "solution":"Developed solutions for the case of multiple advertisers and multiple publishers, while considering the publishers' preferences. Proposition of three mechanisms: (i) the Hungarian VCG, (ii) the Simultaneous English Auction and (iii) the Distributed Relocation Protocol",
+      "references":["adx-issues","sell-billions-dollars-keywords","pos-auct","hyb-key-auct","dbl-click-adx","mls-adv","eff-mech","algo-trans","hung-meth","team-inc","truth-auct","gen-auct-mech"]
+    },
+    {
+      "id":"adx-opt",
+      "title":"Ad Exchange Optimization Algorithms on Advertising Networks",
+      "year":"2014",
+      "authors":["Luis Miralles Pechuan","Claudia Sancher Gomez","Lourdes Martinez Villasenor"],
+      "problematic":"In selecting the best candidate from all possibilities algorithms able to process the advertiser's requirements in tenths of seconds are needed.",
+      "solution":"Developed algorithms using techniques such as threads, AVL trees with hash, multiple node trees or Hadoop technology.",
+      "references":["target-disp-adv","priv-pol-auct","fraud-act-adv","rtb-perf","optimal-rtb"]
+    },
+    {
+      "id":"attr-survival",
+      "title":"Multi-Touch Attribution in Online Advertising with Survival Theory",
+      "year":"2014",
+      "authors":["Ya Zhang","Yi Wei","Jianbiao Ren"],
+      "problematic":"The drawback of rule-based models lies in the fact that the rules are not derived from the data but only based on simple intuition",
+      "solution":"New-data driven attribution model based on survival theory. The model is able to remove the presentation biases inherit to most of the other attribution models and can predict the user's 'conversion probability'.",
+      "references":["mlstage-att","cons-percep","causal-conv-att","mpreduce-simp-data-proc","mm-algo","pred-measurements","stat-models","data-conv-att","accul-hisp","pt-proc-ad","search-ad-mult"]
+    },
+    {
+      "id":"auc-mec-dsp",
+      "title":"Auction Mechanisms for Demand-Side Intermediaries in Online Advertising Exchanges",
+      "year":"2014",
+      "authors":["Lampros C. Stavrogiannis", "Enrico H. Gerding","Maria Polukarov"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bid-drawbridge",
+      "title":"Programmatic Buying Bidding Strategies with Win Rate and Winning Price Estimation in Real Time Mobile Advertising",
+      "year":"2014",
+      "authors":["Xiang Li","Devin Guan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bid-lands",
+      "title":"Bid Landscape Forecasting in Online Ad Exchange Marketplace",
+      "year":"2011",
+      "authors":["Ying Chui","Ruofei Zhang","Wei Li","Jianchang Mao"],
+      "problematic":"One important business model in online display advertising is Ad Exchange marketplace, also called non-guaranteed delivery (NGD), in which advertisers buy targeted page views and audiences on a spot market through real-time auction",
+      "solution":"We describe a bid landscape forecasting system in NGD marketplace for any advertiser campaign specified by a variety of targeting attributes.",
+      "references":["rare-event-rates","dec-trees-case-learn","max-incomp-em","sgd","greedy-approx-gbm","adaptive-bidding","feature-selection","finite-mixture-models","ctr-est","forecast-context-ad","inv-allo-onl-graph","feat-select-high-dim"]
+    },
+    {
+      "id":"budget-smooth",
+      "title":"Real Time Bid Optimization with Smooth Budget Delivery in Online Advertising",
+      "year":"2013",
+      "authors":["Kuang-chih Lee","Ali Jalali","Ali Dasdan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"causal-conv-att",
+      "title":"Causally Motivated Attribution for Online Advertising",
+      "year":"2012",
+      "authors":["Brian Dalessandro","Claudia Perlich","Ori Stitelman","Foster Provost"],
+      "problematic":"The process of assigning conversion credit to the various channels is called 'attribution', and is subject of intense interest in the industry.",
+      "solution":"Presents a causally motivated methodology for conversion attribution in online advertising campaigns. Need for the standardization of attribution measurement and offer three guiding principles to contribute to this standardization.",
+      "references":["user-regression","rand-forests","dom-analysis-reg","eval-ad-comp-pipeline","lin-reg-var-decomp","rel-ind-org-research","corr-onl-behav","reg-analysis-game-theo","course-game-theo","causality","soc-net-privacy","estim-causal-effects","data-conv-att","n-person-games","oda-brow-conv","rand-forest-bias","semiparametric-theo","stat-inf-var","asymp-opt-crossval"]
+    },
+    {
+      "id":"cf-ctr",
+      "title":"Implicit Look-Alike Modelling in Display Ads: transfer collaborative filtering to CTR estimation",
+      "year":"2016",
+      "authors":["Weinan Zhang","Lingxi Chen","Jun Wang"],
+      "problematic":"There is no previous work that explicitly investigates the user online visits similarity and incorporates such similarity into their ad response prediction.",
+      "solution":"We propose a transfer learning model based on the probabilistic latent factor graphic models, where the users' ad response profiles are generated from their online browsing profileS.",
+      "references":["scale-dist-inf-behave","sem-app-cont-ad","emp-comp-sup","delayed-feedback","simp-scale-pred-ad","transfer-naive-bayes","transfer-ctr","bayes-ctr-pred","pred-ads-facebook","coll-filt-gauss-prob","discrim-gener","3-idiots-approach","matrix-fact-tech","cvr-est","transfer-coll-filt","log-reg-aux","feat-pair-asso-class","adx-des","adx-issues","fm-ctr","surv-transf","fact-mach","ctr-est","item-coll-filt-recomm","coll-filt-recomm-sys","transf-reing-survey","unif-coll-filt","behave-targ-help","lasso-ctr-ad","rtb-analysis","rtb-benchmark-ipinyou"]
+    },
+    {
+      "id":"cnn-ctr",
+      "title":"A Convolutional Click Prediction Model",
+      "year":"2015",
+      "authors":["Qiang Liu","Feng Yu","Shu Wu","Liang Wang"],
+      "problematic":"For click prediction on single ad impression, we have access to pairwise relevance among elements in an impression, but not to global interaction among key features of elements. The existing method on sequential click prediction treats propagation unchangeable for different time intervals.",
+      "solution":"We propose a novel model, Convolutional Click Prediction Model (CCPM), based on convolution neural network. CCPM can extract local-global key features from an input instance with varied elements, which can be implemented for not only single ad impression but also sequential ad impression.",
+      "references":["cnn-hybrid-nn-hmm","cnn-sentences","imagenet-class-dp-cnn","resp-pred-coll-filt","fm-libfm","soc-net-ctr-fm","ctr-est","conv-pool-retrieval","lasso-ctr-ad","seq-pred-spon-recur-nn"]
+    },
+    {
+      "id":"cost-sens-ctr",
+      "title":"Cost-sensitive Learning for Bidding in Online Advertising Auctions",
+      "year":"2016",
+      "author":["Flavian Vasile","Damien Lefortier"],
+      "problematic":"One of the most challeging problems is the prediction of ad click and conversion rates. One unadressed problem in the previous approaches is the existence of highly non-uniform misprediction costs.",
+      "solution":"We show that one can get significant lifts in offline and online performance by using a simple modification of the logistic loss function.",
+      "references":["sell-billions-dollars-keywords","loss-funct-pred-ctr","ctr-bid","simp-scale-pred-ad","ad-pred-trenches","rare-event-rates","pred-ads-facebook","ctr-pred-twitter","cost-sens-cost-prop","noise-tol-learn","cost-sens-foundations","lim-mem-bfgs","lscale-sgd","variab-lscale-ml","quasi-newton-mat","onl-imp-weight-aware-updates"]
+    },
+    {
+      "id":"co-visit-fraud",
+      "title":"Using Co-Visitation Networks For Classifying Non-Intentional Traffic",
+      "year":"2013",
+      "authors":["Ori Stitelman","Claudia Perlich","Brian Dalessandro","Rod Hook","Troy Raeder", "Foster Provost"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ctr-bid",
+      "title":"Offline Evaluation of Response Prediction in Onine Advertising Auctions",
+      "year":"2015",
+      "authors":["Olivier Chapelle"],
+      "problematic":"Click-through rates and conversion rates are two core machine learning problems in online advertising. The evaluation of such systems is often based on traditional supervised learning metrics that ignore how the predictions are used.",
+      "solution":"Empirical evaluation of a metric that is specifically tailored for auctions in online advertising and show that it correlates better than standard metrics with A/B test results.",
+      "references":["simp-scale-pred-ad","vicinal-risk","sell-billions-dollars-keywords","representative-allocation","loss-funct-pred-ctr","learn-marg-corrupt","ad-pred-trenches","pred-perf-offl-onl","rtb-analysis"]
+    },
+    {
+      "id":"cvr-est",
+      "title":"Estimating Conversion Rate in Display Advertising from Past Performance Data",
+      "year":"2012",
+      "authors":["Kuang-chih Lee","Burkay Orten","Ali Dasdan","Wentong Li"],
+      "problematic":"Conversion probability estimation is a challenging task since there is extreme data sparsity across different data dimensions and the conversion event occurs rarely.",
+      "solution":"We model the conversion event at different select hierarchical levels with separate binomial distributions and estimate the distribution parameters individually. We demonstrate how we can combine these individual estimators using logistic regression to accurately identify conversion events.",
+      "references":["rare-event-rates","rare-events-mult-resol","distr-inf","comp-pred-prices","latent-dirichlet","sing-val-threshold-matrix","class-proxy","rtb-perf","pool-adj-viol","bayes-ctr-pred","stat-anal-missing-data","imb-datasets","call-pred-rank","resp-pred-coll-filt","ctr-est","mining-imb","rarity-mining","incomplete-data-class","fast-comput-post-mode"]
+    },
+    {
+      "id":"data-conv-att",
+      "title":"Data-driven Multi-touch Attribution Models",
+      "year":"2011",
+      "authors":["Xuhui Shao","Lexin Li"],
+      "problematic":"The attribution problem focuses more on accurate and stable interpretation of the influence of each user interaction to the final user decision rather than just user classification. Traditional classification models fail to achieve those goals.",
+      "solution":"We first propose a bivariate metric, one measures the variability of the estimate, and the other measures the accuracy of classifying the positive and negative users. We then developed a bagged logistic regression model. We also propose an intuitive and simple probabilistic model to directly quantify the attribution of different advertising channels.",
+      "references":["soc-net-privacy","exploit-explo-perf","svn","webpage-class","neural-net","pattern-recogn","bagging-predictors","random-forests","tree-induc-log-reg"]
+    },
+    {
+      "id":"deep-ctr",
+      "title":"Deep Learning over Multi-field Categorical Data: a case study on User Response Prediction",
+      "year":"2016",
+      "authors":["Weinan Zhang","Tianming Du","Jun Wang"],
+      "problematic":"Major user response prediction models have to either limit themselves to linear models or require manually building up high-order combination features. The former loses the ability of exploring feature interactions, while the latter results in a heavy computation in the large feature space.",
+      "solution":"Propose two novel models using deep neural networks (DNNs) to automatically learn effective patterns from categorical feature interactions and make predictions of users' ad clicks. We propose to leverage three feature transformation methods: factorisation machines (FMs), restricted Boltzmann machines (RBMs) and denoising auto-encoders (DAEs).",
+      "references":["hgh-lvl-stud-mod","deep-arch","greedy-layer","gen-den-auto-enc","bagging-predictors","comput-adv","nlp-scratch","deep-cnn-het-pool","partial-conn-nn","unsuper-dp-learn","neocognition","bayes-ctr-pred","speech-dp-recurrent","idiot-bayes","pred-ads-facebook","rest-boltz-mach","train-cont-diver","reduce-dim-nn","deep-struct-click-data","3-idiots-approach","combining-approaches","imagenet-class-dp-cnn","prob-lat-net-vis","strat-dnn-train","deep-learning","cr-ad-past-perf","ipinyou-dataset","ad-pred-trenches","fm-ctr","auto-stop-cross-val","fm-libfm","ctr-est","conv-pool-retrieval","pract-bayes-opt-mach","prevent-nn-overfit","init-moment-dl","ls-info-net-emb","boost-trees-ctr","ctr-rare-events-ad","adapt-decnn","optimal-rtb","tencent-dl-platf"]
+    },
+    {
+      "id":"delayed-feedback",
+      "title":"Modeling Delayed Feedback in Display Avertising",
+      "year":"2014",
+      "authors":["Olivier Chapelle"],
+      "problematic":"Conversions can take place long after the impression - up to a month - and this delayed feedback hinders the conversion modeling.",
+      "solution":"Introducing an additional model that captures the conversion delay. Intuitively, this probabilistic model helps determining whether a user that has not converted should be treated as a negative simple - when the elapsed time is larger than the predicted delay - or should be discarded from the training set - wehn it is too early to tell.",
+      "references":[]
+    },
+    {
+      "id":"double-auc-adx",
+      "title":"Optimal Revenue-Sharing Double Auctions with Applications to Ad Exchanges",
+      "year":"2014",
+      "authors":["Renato Gomes","Vahab Mirrokni"],
+      "problematic":"Platforms often face intense competition from similar market places, and such competition is likely to favor auction rules that secure high payoffs to sellers. What selling mechanism should platforms employ?",
+      "solution":"Study optimal mechanism deisgn in settings plagued by competition and two-sided asymmetric information, and identify conditions under which the current practice of employing constant cuts is indeed optimal.",
+      "references":[]
+    },
+    {
+      "id":"dynamic-bid-ss",
+      "title":"Dynamics of Bid Optimization in Online Advertisement Auctions",
+      "year":"2007",
+      "authors":["Christian Borgs","Jennifer Chayes","Omid Etesami","Nicole Immorlica","Kamal Jain","Mohammad Mahdian"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"fctf",
+      "title":"Predicting ad click-through rates via feature-based fully coupled interaction tensor factorization",
+      "year":"2015",
+      "authors":["Lili Shan","Lei Lin","Chengjie Sun","Xiaolong Wang"],
+      "problematic":"In addition to challenges similar to those encountered in sponsored search advertising, such as data sparsity and cold start problems, more complicated feature interactions involving multi-aspects, such as the user, publisher and advertiser, make CTR estimation in RTB more difficult.",
+      "solution":"We consider CTR estimationg in RTB as a tensor complement problem and propose a fully coupled interactions tensor factorization (FCTF) model based on Tucker decomposition (TD) to model three pair-wise interactions between the user, publisher and advertiser and ultimately complete the tensor complement task.",
+      "references":["spatio-temp-ctr","rare-event-rates","mult-dim-scale-eckart","simp-scale-pred-ad","comb-fact-add-forest","mult-lin-sing-val-decomp","roc-graphs","bayes-ctr-pred","parafac-proced","matrix-fact-tech","cvr-est","ipinyou-dataset","recommender-systems","resp-pred-coll-filt","fm-ctr","tensor-fact-tag-recom","bayes-rank-feedback","opt-rank-fact-recom","ctr-est","ctr-pred-cube-fact","clk-mod-cf","tag-recom-tens-dim-reduc","3mode-factor-anal","ctr-rare-events-ad","2stage-ad-rank","win-price-pred","lasso-ctr-ad","rtb-arbitrage","rtb-benchmark-ipinyou","optimal-rtb"]
+    },
+    {
+      "id":"field-guide-personalized-reserve-prices",
+      "title":"A Field Guide to Personalized Reserve Prices",
+      "year":"2016",
+      "authors":["Renato Paes Leme","Martin Pal","Sergei Vassilvitskii"],
+      "problematic":"Setting and testing reserve prices in single item auctions when the bidders are not identical.",
+      "solution":"We show that the two version have dramatically different properties: lazy reserves are easy to optimize, and A/B test in production, whereas eager reserves always lead to higher welfare, but their optimization is NP-complete, and naive A/B testing will lead to incorrect conclusions. We prove that the eager auction dominates the lazy auction on revenue whenver the bidders are independent or symmetric.",
+      "references":[]
+    },
+    {
+      "id":"fm-ctr",
+      "title":"Predicting Response in Mobile Advertising with Hierarchical Importance-Aware Factorization Machine",
+      "year":"2014",
+      "authors":["Richard Jayadi Oentaryo","Ee Peng Lim","David Jia Wei Low","David Lo","Michael Finegold"],
+      "problematic":"Ad response data change dynamicall over time, and are subject to cold-start situations in which limited history hinders reliable prediction. There is also a need for a robust regression estimation for high prediction accuracy, and good ranking to distinguish the impacts of different ads.",
+      "solution":"Hierarchical Importance-aware Factorization Machine (HIFM), which provides an effective generic latent factor framework that incorporates importance weights and hierarchical learning.",
+      "references":["rare-event-rates","spatio-temp-ctr","truth-auct","evol-algo","tensor-decomp","roc-graphs","bayes-ctr-pred","cf-temp","spatio-temp-cf","resp-pred-coll-filt","fact-mach","fm-libfm","scale-fm","ctr-est","comb-reg-rank","stoch-l1-reg-loss","plant-kingdom-pred-fm","clk-mod-cf","max-mf","dyn-mf","ind-comp-rank","cont-cf-hier-mf"]
+    },
+    {
+      "id":"fm-ftrl",
+      "title":"Factorization Machines with Follow-The-Regularized-Leader for CTR prediction in Display Advertising",
+      "year":"",
+      "authors":[],
+      "problematic":"Predicting ad click-through rates",
+      "solution":"We present an online learning algorithm for click-through rate prediction, namely Follow-The-Regularized-Leader (FTRFL) with pre-coordinate learning rates into Factorization machines. The method outperforms the baseline with stochastic gradient decent, and has a faster rate of convergence.",
+      "references":["simp-scale-pred-ad","cvr-est","terascale-lin-learn","bayes-ctr-pred","onl-algo-stoch-approx","conv-prog","onl-batch-for-back-split","dual-av-methods","ad-pred-trenches","fact-mach","fm-libfm","ls-dist-deep-net"]
+    },
+    {
+      "id":"forecast-err",
+      "title":"Handling Forecast Errors While Bidding for Display Advertising",
+      "year":"2012",
+      "authors":["Kevin J.Lang","Benjamin Moseley","Sergei Vassilvitskii"],
+      "problematic":"The online strategy is typically highly dependent on both supply and expected price distributions, both of which are forecast using traditional machine learning methods.",
+      "solution":"We investigate the optimum strategy of the bidding agent when faced with incorrect forecasts.",
+      "references":["select-callout","ad-serv-comp-allo","rtb-perf","bid-lands","onl-key-match","onl-sto-pack","onl-sto-match","representative-allocation","adaptive-bidding","onl-ad-serv-exch","adx-issues","opt-onl-assign-forecasts"]
+    },
+    {
+      "id":"forget-click",
+      "title":"Evaluating and Optimizing Online Advertising: Forget the click, but there are good proxies",
+      "year":"2012",
+      "authors":["Brian Dalessandro","Rod Hook","Claudia Perlich","Foster Provost"],
+      "problematic":"Measuring success if critical both for evaluating and comparing different targeting strategies, and for designing and optimizing the strategies in the first place. Proxies are necessary because data on the actual goals of advertising often are scarce, missing or fundamentally difficult or impossible to observe.",
+      "solution":"Across a large number of campaigns, clicks are not good proxies for evaluation nor for optimization. Predictive models built based on brand site visits do a remarkably good job of predicting which browsers will purchase. Evaluating campaigns and optimizing based on clicks seems wrongheaded.",
+      "references":["sparse-lin-class","roc-eval-ml-algo","causal-conv-att","natural-clickers","pav-roc","bias-var-dim","whither-click","emp-anal-ad","roc-meaning","content-des-ctr","data-mining-tech","behave-targ","search-lift-soc-inf","bias-var-caus-ad","lin-bid","soc-net-privacy","model-validation","oda-brow-conv","expl-data-analysis","rarity-mining"]
+    },
+    {
+      "id":"gd-representatives",
+      "title":"Maximally representative allocations for guaranteed delivery advertising campaigns",
+      "year":"2013",
+      "author":["R. Preston McAfee","Kishore Papineni","Sergei Vassilvitskii"],
+      "problematic":"When a seller (publisher or website) with some degree of price-setting-ability or market power, has an extremely large variety of goods for sale and cannot control exactly the product mix available. The key problem is the large variety of distinct goods for sale.",
+      "solution":"The present study derives a method of pricing such advertisements based on their relative scarcity while ensuring that all campaigns obtain a reasonably representative sample of the relevant opportunities.",
+      "references":["opt-all-overlap-inv","comp-equi-stab","onl-algo-buyback","adverse-select","shale-algo","opt-clearing","onl-ad-slotting","lst-squares-max-entr","representative-allocation","pric-discr-soc-welfare"]
+    },
+    {
+      "id":"group-buy",
+      "title":"Real-Time Bid Optimization for Group-Buying Ads",
+      "year":"2014",
+      "authors":["Raju Balakrishnan","Rushi P. Bhatt"],
+      "problematic":"Group-buying ads seeking a minimum number of customers before the deal expiry are increasingly used by the daily-deal providers. Traditional static bidding strategies are far from optimal.",
+      "solution":"We propose a real-time bidding strategy for group-buying deals based on the online optimization of bid values.",
+      "references":["comp-price-disc-mech","opt-clearing","minim-derivatives","primal-dual-max-ad","daily-deal","groupon-yelp-effect","select-callout","strat-groupbuy","rtb-perf","social-choices-roles","representative-allocation","adapt-policies-groupon","auct-theory","daily-select-rev-max","adwords-matching","prob-stat-eng","ctr-est","opt-onl-assign-forecasts"]
+    },
+    {
+      "id":"ipinyou-dataset",
+      "title":"iPinYou Global RTB Bidding Algorithm Competition Dataset",
+      "year":"2014",
+      "authors":["Hairen Liao","Lingxiao Peng","Zhenchuan Liu","Xuehua Shen"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lift-bidding",
+      "title":"Lift-Based Bidding in Ad Selection",
+      "year":"2016",
+      "authors":["Jian Xu","Xuhui Shao","Jianjie Ma","Kuang-chih Lee","Hang Qi","Quan Lu"],
+      "problematic":"The bid price per ad impression is typically decided by the expected value of how it can lead to a desired action event to the advertiser. This industry standard approach to decide the bid price does not consider the actual effect of the ad shown to the user.",
+      "solution":"We prove that if the bid price is decided based on the performance lift rather than absolute performance value, advertisers can actually gain more action events.",
+      "references":["delayed-feedback","forget-click","causal-conv-att","mta-budget-allocation","cvr-est","adx-des","lin-bid","post-click-conv","data-believe","data-conv-att","time-wgtd-mta-journey","optimal-rtb"]
+    },
+    {
+      "id":"lin-bid",
+      "title":"Bid Optimizing and Inventory Scoring in Targeted Online Advertising",
+      "year":"2012",
+      "authors":["Claudia Perlich","Brian Dalessandro","Foster Provost","Rod Hook","Ori Stitelman","Troy Raeder"],
+      "problematic":"This paper presents a bid-optimization approach that is implemented in production.",
+      "solution":"The approach combines several supervised learning algorithms, as well as second-price auction theory, to determine the correct price.",
+      "references":["truth-auct","surrogate-train","causal-conv-att","strat-behave-spons","sell-billions-dollars-keywords","lscale-bayes-log-reg","log-reg-rare-events","opt-bid-keyword","data-mining-ad-sys","soc-net-privacy","design-princ-mass","data-conv-att","semiparametric-theo","counterspec-auct","rel-clk-pred"]
+    },
+    {
+      "id":"linkedin-pacing",
+      "title":"Budget Pacing for Targeted Online Advertisements at LinkedIn",
+      "year":"2014",
+      "authors":["Deepak Agarwal","Souvik Ghosh","Siyu You","Kai Wei"],
+      "problematic":"In a greedy mechanism high performing advertisers tend to drop out of the auction marketplace fast and that adversely affects both the advertiser experience and the publisher revenue.",
+      "solution":"Description of a method for improving such ad serving systems by including a budget pacing component that serves ads by being aware of global supply patterns.",
+      "references":["opt-del-spon-budg","comp-ad-linkedin","forecast-high-dim-data","truth-auct","infra-linkedin","dynamic-bid-ss","sell-billions-dollars-keywords","onl-sto-match","budg-opt-search-ad","onl-budg-random-adwords","rev-anal-rules","game-theo-spon-auct","adwords-matching","reserve-price-exp","opt-query-sub","adapt-alg-keywords","bigdata-linkedin","pos-auct"]
+    },
+    {
+      "id":"mab-adx",
+      "title":"Multi-Armed Bandit with Budget Constraint and Variable Costs",
+      "year":"2013",
+      "authors":["Wenkui Ding","Tao Qin","Xu-Dong Zhang","Tie-Yan Liu"],
+      "problematic":"Study the multi-armed bandit problems with budget constraint and variable costs",
+      "solution":"Propose two UCB based algorithms for the new setting. The first algorithm needs prior knowledge about the lower bound of the expected costs when computing the exploration term. The second algorithms eliminates this need by estimating the minimal expected costs from empirical observations, and therefore can be applied to more real-world applications where prior knowledge is not available.",
+      "references":["asym-adpt-all-rules-mab","game-theo-serv-pro","best-arm-id-mab","finite-mab","conf-bounds-expl","adpt-routing","char-tru-mab","amazon-ec2-price","infinite-mab","dynamic-bid-ss","pure-exp-mab","mortal-mab","select-callout","cont-mab-lin","auct-int","approx-alg-budg","tight-bds-mab","epsilon-mab","knapsack-mab","game-theo-res-allo","comb-allo-virt-cloud"]
+    },
+    {
+      "id":"mta-budget-allocation",
+      "title":"Multi-Touch Attribution Based Budget Allocation in Online Advertising",
+      "year":"2014",
+      "authors":["Sahin Cem Geyik","Abhishek Saxena","Ali Dasdan"],
+      "tags":["online advertising","multi-touch attribution","budget allocation"],
+      "problematic":"How to best allocate campaign budget so that the advertiser or campaign-level ROI is maximized.",
+      "solution":"We employ both last-touch (last ad gets all credit) and multi-touch (many ads share the credit) attribution methodologies.",
+      "references":["mlstage-att","opt-budg-chan-inf","budg-opt-carryover","dynamic-bid-ss","causal-conv-att","opt-budg-keyword-ads","budget-smooth","cvr-est","allo-expend-keywords","data-conv-att","n-person-games","time-wgtd-mta-journey","joint-opt-budg-allo"]
+    },
+    {
+      "id":"optimal-rtb",
+      "title":"Optimal Real-Time Bidding for Display Advertising",
+      "year":"2014",
+      "authors":["Weinan Zhang","Shuai Yuan","Jun Wang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"optimal-rtb-strategies",
+      "title":"Optimal Real-Time Bidding Strategies",
+      "year":"2016",
+      "authors":["Joaquin Fernandez-Tapia","Olivier Guéant","Jean-Michel Lasry"],
+      "problematic":"The optimization problems faced by companies building bidding strategies are new and interesting for the community of applied mathematicians.",
+      "solution":"Introduce a stochastic control model that addresses the question of the optimal bidding strategy in various realistic contexts: the maximization of the inventory bought with a given amount of cash in the framework of audience strategies, the maximization of the number of conversions/acquisitions with a given amount of cash, etc. The sequence of auctions is modeled by a Poisson process and the price to beat for each auction is modeled by a random variable following almost any probability distribution. The optimal bids are characterized by a Hamilton-Jacobi-Bellman equation, and that almost-closed-form solutions can be found by using a fluid limit.",
+      "references":["budg-opt-spons","hgh-freq-trad","opt-contracts","yield-opt-adx","snd-int-diff-eq","semiconc-fun","opt-auct-rev","partial-diff-eq","stat-mod-Vick","anal-budg-pacing","perf-prog-contracts","rtb-strat-online","inv-risk","opt-portfolio-liqu","feedback-ad","opt-res-price","2ab-trust","bandit-speed","pen-bandit","budget-smooth","dsp-vs-adx","counterspec-auct","supply-side-opt","seq-sel-corr-ads","optimal-rtb","feedback-cont"]
+    },
+    {
+      "id":"opt-prog-buy",
+      "title":"Real-Time Bidding Rules of thumb: analytically optimizing the programmatic buying of ad-inventory",
+      "year":"2015",
+      "authors":["Joaquin Fernandez-Tapia"],
+      "problematic":"Optimization aspects of ad-inventory buying through real-time bidding, by taking as starting point the fundamental mathematical relationships between the different variables involved.",
+      "solution":"We focus on three tactical issues: (1) comparative statics relating the different macroscopic variables important for the operation of an advertising campaign (2) optimal bidding across different aggregates of inventory and (3) optimal budget pacing.",
+      "references":["thermo-calc","rtb-perf","stat-mod-Vick","stochastic-mab","budget-smooth","cvr-est","adx-issues","lin-bid","ctr-est","rate-est","survey-rtb","rtb-analysis","opt-bid-algo-rtb","optimal-rtb"]
+    },
+    {
+      "id":"opt-rtb-pacing",
+      "title":"Optimal budget-pacing for Real-Time Bidding",
+      "year":"2015",
+      "authors":["Joaquin Fernandez-Tapia"],
+      "problematic":"How to smooth the spent throughout the day in an optimal fashion",
+      "solution":"Introduce an optimization framework based on variational calculus which permits to obtain closed formulas for the budget-pacing problem in RTB. The optimal spending is not linear but proportional to the number of auction-requests we observe. The same framework can be applied in the presence of frequency-capping.",
+      "references":["rtb-perf","rtb-look-alike-segm","smooth-budget","cvr-est","adx-issues","lin-bid","survey-rtb","rtb-analysis","opt-bid-algo-rtb","optimal-rtb"]
+    },
+    {
+      "id":"privacy",
+      "title":"Selling Off Privacy at Auction",
+      "year":"2013",
+      "authors":["Lukasz Olejnik","Tran Minh-Dung","Claude Castellucia"],
+      "problematic":"The emergence of bidding technologies allows companies to exchange user data as a product and therefore raises important concerns from privacy perspectives.",
+      "solution":"Perform a privacy analysis of CM and RTB and quantify the leakage of users' browsing histories due to these mechanisms",
+      "references":["priv-rat-dec-mak","privacy-worth","behav-big-mac","priv-info-web-searches","betrayed","location-privacy","prof-store-match","brows-uniq","ad-auct-data","priv-pol-rtb","priv-loss-protect","priv-leak-protect","priv-diff","cookie-match","unique-browsing-patt","privad-privacy","data-worth","adnostic-privacy","counterspec-auct","ad-interplay","rtb-analysis"]
+    },
+    {
+      "id":"representative-allocation",
+      "title":"Bidding for Representative Allocation for Display Advertising",
+      "year":"2009",
+      "authors":["Arpita Ghosh","Preston McAfee","Kishore Papineni","Sergei Vassilvitskii"],
+      "problematic":"This correlation between price and value means that a selle implementing the contract through bidding should offer the contract buyer a range of prices, and not just the cheapest impressions necessary to fulfill its demand. Implementing a contract using a range of prices, is akin to creating a mutual fund of advertising impressions, and requires randomized bidding.",
+      "solution":"Characterize what allocations can be implemented with randomized bidding, namely those where the desired share obtained at each price is a non-increasing function of price. Provide a full characterization of when a set of campaigns are compatible and how to implement them with randomized bidding strategies.",
+      "references":["onl-algo-buyback","opt-clearing","onl-ad-slotting","lst-squares-max-entr","comb-alloc-mec","auct-bid","converg-theo-diff","opt-disp-arch","mod-perf-comp"]
+    },
+    {
+      "id":"reserve-price",
+      "title":"An Empirical Study of Reserve Price Optimisation in Real-Time bidding",
+      "year":"2014",
+      "authors":["Shuai Yuan","Jun Wang","Bowei Chen","Peter Mason","Sam Seljan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rtb-analysis",
+      "title":"Real-Time Bidding for Online Advertising: Measurement and Analysis",
+      "year":"2013",
+      "authors":["S. Yuan","J. Wang","X. Zhao"],
+      "problematic":"Provide first-hand insights into the emerging new impressions selling infrastructure and its bidding behaviours, and help identifying research and design issues in such systems.",
+      "solution":"Periodic patterns occur in various statistics including impressions, clicks, bids, and conversion rates. Significant needs for optimisation algorithms incorporating the facts such as the temporal behaviours, the frequency, and recency of the ad displays.",
+      "references":["web-behav-att","jit-cont","asym-theo-goodness","pric-guar-contracts","pred-prof-ad","sem-app-cont-ad","cont-ad-click-feedback","select-callout","pred-demo-ad-mult-web","bandit-algo-budg-learn","sell-billions-dollars-keywords","opt-auct-mult-unit-env","onl-sto-pack","learn-advertise","budget-mab","internet-auct","adx-issues","opt-auct-des","reserve-price-exp","soc-net-privacy","imp-coupl-ad-targ","dyn-rev-manag","var-test-norm","opt-assign-forecast","sell-fut-ad-slots","keyword-extract","prob-lat-segm","opt-reserve-price-spons-ad","behav-targ-onl-ad","adv-keywords"]
+    },
+    {
+      "id":"rtb-arbitrage",
+      "title":"Statistical Arbitrage Mining for Display Advertising",
+      "year":"2015",
+      "authors":["Weinan Zhang","Jun Wang"],
+      "problematic":"Despite the new automation, the ad markets are still informationally inefficient due to the heavily fragmented marketplaces. Two display impressions with similar or identical effectiveness may sell for quite different prices at different market segments or pricing schemes.",
+      "solution":"We propose a novel data mining paradigm called Statistical Arbitrage Mining (SAM) focusing on mining and exploiting price discrepancies between two pricing schemes. It's a meta-bidder that hedges advertisers' risk between CPA-based campaigns and CPM-based ad inventories; it statistically assesses the potential profit and cost for an incoming CPL bid request against a portfolio of CPA campaigns based on the estimated conversion rate, bid landscape and other statistics learned from historical data.",
+      "references":["budg-opt-spons","onl-allo-smooth","price-guar-contracts","ad-arbitrage","opt-equ-bid-strat","dyn-price-model-rtb","bid-lands","causal-conv-att","adx-des","sell-billions-dollars-keywords","onl-sto-pack","pairs-trading","representative-allocation","market-eff-sa","perf-price-ad","budget-smooth","cvr-est","offline-eval-context-bandit","ipinyou-dataset","overview-exchange-des","adx-issues","lin-bid","reserve-price","rtb-analysis","optimal-rtb","rtb-benchmark-ipinyou","joint-opt-budg-allo"]
+    },
+    {
+      "id":"rtb-info",
+      "title":"Information Disclosure in Real-Time Bidding",
+      "year":"2014",
+      "authors":["Juanjuan Li","Yong Yuan","Rui Qin"],
+      "problematic":"Information about target audiences is usually disclosed to advertisers, while information about publishers are typically not available for advertisers, especially in real-time setting. Serious information asymmetry problem in RTB markets, which has significant influence on both advertisers' bidding strategies and publishers' revenues.",
+      "solution":"Study the information disclosure strategies of publishers in case when the disclosure may incur an extra cost: all disclosed, non-disclosed and partially disclosed.",
+      "references":[]
+    },
+    {
+      "id":"rtb-opt",
+      "title":"Optimizing Bidding Algorithm of Real-Time Bidding in Online Ads Auction",
+      "year":"2014",
+      "authors":["Chong-rui Zhang","E Zhang"],
+      "problematic":"There is little study on the macro-level auction mechanism, especially the characteristics of the general winning bids.",
+      "solution":"This paper conducts and empirical analysis of average deal price and bidding volume at different times of impressions. We design and optimized method for delivery of RTB ads through offline experiments.",
+      "references":[]
+    },
+    {
+      "id":"rtb-perf",
+      "title":"Real-Time Bidding Algorithms for Performance-Based Display Ad Allocation",
+      "year":"2011",
+      "authors":["Ye Chen","Pavel Berkhin","Bo Anderson","Nikhil R. Devanur"],
+      "problematic":"The current practice is to solve the optimization problem offline at a tractable level of impression granularity but this approach fails to scale to ad delivery decision making at an individual impression level.",
+      "solution":"Propose a rtb algorithm that enables fine-grained impression valuation, and adjusts value-based bid according to real-time constraint snapshot. One algorithm adjusts bids against real-time constraint satisfaction level using control-theoretic methods, and the other adjusts bids also based on the historical bidding landscape statistically modeled.",
+      "references":["rare-event-rates","feedback-systems","lopsided-bipartite-graph-algo","ls-behave-targ","comb-alloc-mec","adaptive-bidding","bayes-ctr-pred","modern-control-tech","auct-theo-lit","opt-bypass-cream","truth-auct-opt-profit","quasi-prop-mech","adx-issues","opt-auct-des"]
+    },
+    {
+      "id":"rtb-pricing-ext",
+      "title":"Pricing Externalities in Real-Time Bidding Markets",
+      "year":"",
+      "authors":["Joseph Reisinger","Michael Driscoll"],
+      "problematic":"The resulting differential impression pricing is only visible to publishers as a positive externality to revenue unless they collect the same audience targeting information.",
+      "solution":"We introduce a Bayesian hierarchical model of auction clearing price that can naturally account for the presence of publisher-advertiser information asymmetry and quantify its impat on price.",
+      "references":["bayes-inf-tobit-cens","res-inf-reg","real-adx","dirichlet-process-mixt","dyn-arch-tobit","reserve-price-exp"]
+    },
+    {
+      "id":"select-callout",
+      "title":"Selective Call Out and Real Time Bidding",
+      "year":"2010",
+      "authors":["Tanmoy Chakraborty","Eyal Even-Dar","Sudipto Guha"],
+      "problematic":"Developing a joint optimization framework which optimizes over the allocation and well as solicitation.",
+      "solution":"Selective call out modelled as an online recurrent Bayesian decision framework with bandwidth type constraints.",
+      "references":["rev-max-ad-auct","knapsack-secretary","prob-dist-mono-hazard-rate","budget-auct-heter-items","primal-dual-max-ad","max-submodular-matroid","approx-budg-allo","seq-posted-pricing","adwords-probl","representative-allocation","adaptive-bidding","approx-quantiles","bayes-comb-opt","bandwidth-bursty-conn","mult-secretary-auct","mab-metric-spaces","max-submodular-mult-lin","stochastic-knapsack","adwords-matching","adx-issues","opt-auct-des","ad-quality-search-ad","convex-analysis","comp-networks","opt-onl-assign-forecasts"]
+    },
+    {
+      "id":"sample-pred",
+      "title":"Pleasing the advertising oracle: Probabilistic prediction from sampled, aggregated ground truth",
+      "year":"2014",
+      "authors":["Melinda Han Williams","Claudia Perlich","Brian Dalessandro","Foster Provost"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"throatling-pacing",
+      "title":"Smart Pacing for Effective Online Ad Campaign Optimization",
+      "year":"2015",
+      "authors":["Jian Xu","Kuang-chih Lee","Hang Qi","Quan Lu"],
+      "problematic":"The liquidity makes price elasticity and bid landscape between demand and supply change quite dramatically. It is challenging to perform smooth pacing control and maximize campaign performance simultaneously.",
+      "solution":"We propose a smart pacing approach in which the delivery pace of each campaign is learned from both offline and online data to achieve smooth delivery and optimal performance goals.",
+      "references":["opt-del-spon-budg","rare-event-rates","linkedin-pacing","onl-allo-smooth","partner-tiering","dynamic-bid-ss","simp-scale-pred-ad","rtb-perf","adaptive-control","budget-smooth","cvr-est","adwords-matching","joint-opt-budg-allo"]
+    },
+    {
+      "id":"transfer-ctr",
+      "title":"Scalable Hands-Free Transfer Learning for Online Advertising",
+      "year":"2014",
+      "authors":["Brian Dalessandro","Troy Raeder","Foster Provost"],
+      "problematic":"Building many models on massive data becomes prohibitively expensive computationally.",
+      "solution":"Combination of strategies: (i) transfer learning: Bayesian logistic regression trained with stochastic gradient descent (SGD) from the more expensive target data (ii) a new update rule for automatic learning rate adaptation, to support learning from sparse, high-dimensional data, as well as the integration with adaptive regularization.",
+      "references":[]
+    },
+    {
+      "id":"turn-throatling",
+      "title":"From 0.5 Million to 2.5 Million: Efficiently Scaling up Real-Time Bidding",
+      "year":"2015",
+      "authors":["Jianqiang Shen","Burkay Orten","Sahin Cem Geyik","Daniel Liu","Shahriar Shariat","Fang Bian","Ali Dasdan"],
+      "problematic":"It is typical for a contemporary Real-Time Bidding system to receive millions of bid requests per second at peak time, and have a large portion of these to be irrelevant to any advertiser. Given a valuable bid request, tens of thousands of advertisements might be qualified for scoring.",
+      "solution":"Our bid request model treats the system load as a hierarchical resource allocation problem and directs traffic based on the estimated quality of bid requests. Our exploration/exploitation advertisement model selects a limited number of qualified advertisements for thorough scoring based on the expected value of a bid request to the advertiser given its features. Our combined bid request and advertisement model is able to win more auctions and bring more value to clients by stabilizing the bidding pipeline. Our deployed system is capable of handling 5x more bid requests.",
+      "references":["cvr-est","def-flood-attck","budget-smooth","protect-dist-hist","roc-analysis","part-obs-sto","opt-rl-pol","ziggurat-meth","cheetah"]
+    },
+    {
+      "id":"user-tracking",
+      "title":"Network Analysis of Third Party Tracking",
+      "year":"2013",
+      "authors":["Richard Gomer","Eduarda Mendes Rodrigues","Natasa Milic-Frayling","M.C. Schraefel"],
+      "problematic":"Previous research has investigated tracking practices and tracking agencies associated with popular websites",
+      "solution":"We investigate the network properties of the third party referral structures that facilitate gathering of user information for the delivery of personalized ads",
+      "references":["eff-sch-ad","val-behave-targ","unique-browser","onl-ad-industry","priv-diff","tim-info-spe-ad","unintrusive-cost-tech","eff-behave-net","int-web-usage","renorm-grp-anal","scale-and-percol","your-data-sale","detect-def-3party","entropy-appr-targ","privacy-preserv-targ-ad","percept-onl-behave-targ","behave-targ-help"]
+    },
+    {
+      "id":"win-price-pred",
+      "title":"Predicting Winning Price in Real Time Bidding with Censored Data",
+      "year":"2015",
+      "authors":["Wush Chi-Hsuan Wu","Mi-Yen Yeh","Ming-Syan Chen"],
+      "problematic":"Study how to predict the winning price such that the DSP can win the bid by placing a proper bidding value in the real-time bidding (RTB) auction. A major challenge is that a DSP usually suffers from the censoring of the winning price, especially for those lost bids in the past.",
+      "solution":"We utilize the censored regression model, which is widely used in the survival analysis and econometrics, to fit the censored bidding data.",
+      "references":["inter-model-emp-anal","mem-algo-bound-opt","delayed-feedback","bid-lands","onl-sto-pack","onl-sto-match","adaptive-bidding","cens-data-trunc-dist","pred-ads-facebook","opt-bipartite-match","survival-analysis","ad-pred-trenches","price-ext-rtb","like-est-cens-rand","est-rela-limit-dep","rtb-frontier","feat-hash","rtb-analysis","optimal-rtb","rtb-benchmark-ipinyou"]
+    },
+    {
+      "id":"finite-mab",
+      "title":"Finite-time Analysis of the Multi-Armed Bandit problem",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"greedy-keyword",
+      "title":"Greedy Bidding strategies for keyword auctions",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"asym-min-char",
+      "title":"Asysmptotic minimax character of the sample distribution function and of the classical multinomial estimator",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"weighted-maj",
+      "title":"The weighted majority algorithm",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"conv-prog",
+      "title":"Online convex programming and generalized infinitesimal gradient ascent",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rare-event-rates",
+      "title":"Estimating Rates of Rare events with multiple hierarchies through scalable log-linear models",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"beat-mach",
+      "title":"Beat the Machine: Challenging workers to find the unknown unknowns",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"classification-imbalance",
+      "title":"Why label when you can search? strategies for applying human resources to build classfication models under extreme class imbalance",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lscale-sgd",
+      "title":"Large scale machine learning with stochastic gradient descent",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"stacked-reg",
+      "title":"Stacked Regressions",
+      "year":"1996",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ls-behave-targ",
+      "title":"Large-scale behavioral targeting",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"reg-mtl",
+      "title":"Regularized multi-task learning",
+      "year":"2004",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adp-fraud",
+      "title":"Adaptive Fraud Detection",
+      "year":"1997",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mtl-hier-bayes",
+      "title":"Solving a huge number of similar tasks: a combination of multi-task learning and a hierarchical bayesian approach",
+      "year":"1998",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mech-turk",
+      "title":"Quality management on amazon mechanical turk",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mult-comp-induct",
+      "title":"Multiple comparisons in induction algorithms",
+      "year":"2000",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"find-right-cons",
+      "title":"Finding the right consumer: optimizing for conversion in display advertising campaigns",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"surv-transf",
+      "title":"A survey on Transfer Learning",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"behave-targ",
+      "title":"Learning to target: What works for behavioral targeting",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"soc-net-privacy",
+      "title":"Audience selection for on-line brand advertising: privacy friendly social network targeting",
+      "year":"2009",
+      "authors":["F. Provost","B. Dalessandro","R. Hook","X. Zhang","A. Murray"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"applied-ml",
+      "title":"Guest editors' introduction: On applied research in machine learning",
+      "year":"1998",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"design-princ-mass",
+      "title":"Design principles of massive, robust prediction systems",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"data-enh-pred",
+      "title":"Data enhanced predictive modleing for sales targeting",
+      "year":"2006",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"oda-brow-conv",
+      "title":"Estimating the effect of online display advertising on browser conversion",
+      "year":"2011",
+      "authors":["O Stitelman","B. Dalessandro","C. Perlich","F. Provost"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"feat-hash",
+      "title":"Feature hashing for large scale multi-task learning",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"class-dict-tree-induc",
+      "title":"Learning when training data are costly: the effect of class distribution on tree induction",
+      "year":"2003",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mtl-sample-bias",
+      "title":"Multi-task learning for classification under sample selection bias",
+      "year":"2007",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mtl-dirichlet-priors",
+      "title":"Multi-task learning for classification with dirichlet process priors",
+      "year":"2007",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"eval-class-samp-sel-bias",
+      "title":"Learning and evaluating classifier under sample selection bias",
+      "year":"2004",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"reg-var-sel-elastic",
+      "title":"Regularization and variable selection via the elastic net",
+      "year":"2005",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adx-issues",
+      "title":"Ad Exchange: Research Issues",
+      "year":"2009",
+      "authors":[],
+      "problematic":"an emerging way to sell and buy display ads on the Internet is via ad exchanges",
+      "solution":"Abstract a model for ad exchanges. Based on the model, we present research problems in auction theory, optimization and game theory. The goal is to present a blueprint for research in design, analyses and use of ad exchanges",
+      "references":[]
+    },
+    {
+      "id":"sell-billions-dollars-keywords",
+      "title":"Internet advertising and the generalized second-price auction: Selling billions of dollars worth of keywords",
+      "year":"2007",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"hyb-key-auct",
+      "title":"Hybrid keyword search auctions",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pos-auct",
+      "title":"Position auctions",
+      "year":"2007",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dbl-click-adx",
+      "title":"Double Click Ad Exchange Auction",
+      "year":"2012",
+      "authors":["Y. Mansour","S. Muthukrishnan","N. Nisan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mls-adv",
+      "title":"Protocols and Strategies for Multi-Short Publisher Oriented Advertising",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"eff-mech",
+      "title":"Truthful and efficient mechanisms for Website dependent advertising auctions",
+      "year":"2014",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"algo-trans",
+      "title":"Algorithms for the assignment and transportation problems",
+      "year":"1957",
+      "authors":["J. Munkres"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"hung-meth",
+      "title":"The Hungarian method for the assignment problem",
+      "year":"1955",
+      "authors":["H. W. Kuhn"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"team-inc",
+      "title":"Incentives in Teams",
+      "year":"1973",
+      "authors":["T. Groves"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"truth-auct",
+      "title":"Truthful auctions for pricing search keywords",
+      "year":"2006",
+      "authors":["G. Aggarwal","A. Goel","R. Motwani"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"gen-auct-mech",
+      "title":"General auction mechanism for search advertising",
+      "year":"2009",
+      "authors":["G. Aggarwal","S. Muthukrishnan","D. Pa'l", "M. Pa'l"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"target-disp-adv",
+      "title":"Targeting Display Advertising",
+      "year":"2013",
+      "authors":["W. W. Moe"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"priv-pol-auct",
+      "title":"The Impact of Privacy Policy on the Auction Market for Online Display",
+      "year":"2013",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"fraud-act-adv",
+      "title":"Understanding Fraudulent Activiteis in Online Ad Exchanges",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mlstage-att",
+      "title":"Media exposure through the funnel: A Model of Multi-stage Attribution",
+      "year":"2013",
+      "authors":["V. Abhishek","P. S. Fader", "K. Hosanagar"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cons-percep",
+      "title":"Does customization impact advertising effectiveness? an exploratory study of consume perceptions of advertising in customized online environments",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mpreduce-simp-data-proc",
+      "title":"Mapreduce: simplified data processing on large clusters",
+      "year":"2008",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mm-algo",
+      "title":"A tutorial on mm algorithms",
+      "year":"2004",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"stat-models",
+      "title":"Statistical Models and Methods for Lifetime Data",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pred-measurements",
+      "title":"A model for predicitve measurements of advertising effectiveness",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"auct-int",
+      "title":"Auctions with intermediaries",
+      "year":"2010",
+      "authors":["J. Feldman","V. Mirrokni","S. Muthukrishnan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"auct-theory",
+      "title":"Auction Theory",
+      "year":"2010",
+      "authors":["V. Krishna"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"user-mod-pos-auct",
+      "title":"User modeling in position auctions: Re-considering the GSP and VCG mechanisms",
+      "year":"2009",
+      "authors":["D. Kuminov","M. Tennenholtz"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"subcontract-allo",
+      "title":"Small business participation procurement policy: Subcontracting vs allotment",
+      "year":"2012",
+      "authors":["F. Maréchal","P.-H. Moran"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-auct-des",
+      "title":"Optimal Auction Design",
+      "year":"1981",
+      "authors":["R. B. Myerson"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"design-comp",
+      "title":"Mechanism Design by Competing Sellers",
+      "year":"1993",
+      "authors":["R. P. McAfee"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"proc-auct",
+      "title":"Procurement auctions with pre-award subcontracting",
+      "year":"2009",
+      "authors":["J. Nakabayashi"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"comp-inter-auct",
+      "title":"Competing intermediary auctions",
+      "year":"2013",
+      "authors":["L. C. Stavrogiannis","E. H. Gerding","M. Polukarov"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"subcontract",
+      "title":"How to subcontract?",
+      "year":"2009",
+      "author":["A. Wambach"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"auct-price-boost-dens",
+      "title":"Modeling auction price uncertainty using boosting-based conditional density estimation",
+      "year":"2002",
+      "author":["R. Schapire","P. Stone","D. McAllester","M. Littman","J. Csirik"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"trading-ag-comp",
+      "title":"The 2001 trading agent competition",
+      "year":"2003",
+      "author":["M. Wellman","A. Greenwald","P. Stone","P. Wurman"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"price-pred-trad-comp",
+      "title":"Price prediction in a trading agent competition",
+      "year":"2004",
+      "author":["M. Wellman","D. Reeves","K. Lochner","Y. Vorobeychik"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"auto-trad-agent",
+      "title":"An adaptive autonomous trading agent",
+      "year":"2003",
+      "author":["M. He","N. Jennings"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"stoch-pred",
+      "title":"Stochastic prediction and optimization in TAC travel",
+      "year":"2009",
+      "author":["A. Greenwal","S. Lee","V. Naroditskiy"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"trad-agent-tac02",
+      "title":"A trading agent developed for TAC-02",
+      "year":"2002",
+      "author":["R. Putchala","V. Morris","R. Kazhanchi","L. Raman","S. Shekhar"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"appl-log-reg",
+      "title":"Applied Logistic Regression",
+      "year":"2000",
+      "author":["D. Hosmer","S. Lemeshow"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ctr-est",
+      "title":"Predicting clicks: estimating the click-through rate for new ads",
+      "year":"2007",
+      "author":["M. Richardson","E. Dominowska","R. Ragno"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"tv-aud-retention",
+      "title":"Ad quality on TV: Predicting television audience retention",
+      "year":"2009",
+      "author":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cont-fac-clk-rates",
+      "title":"Modeling contextual factors of click rates",
+      "year":"2007",
+      "author":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pred-bounce-rates",
+      "title":"Predicting bounce rates in sponsored search advertisements",
+      "year":"2009",
+      "author":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"accul-hisp",
+      "title":"The influence of acculturation on advertising effectiveness to the hispanic market",
+      "year":"2011",
+      "author":["L. C. Ueltschy","R. F. Krampf"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pt-proc-ad",
+      "title":"Path to purchase: A mutually exciting point process model for online advertising and conversion",
+      "year":"2012",
+      "author":["L. Xu","A. Duan","A. B. Whinston"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"search-ad-mult",
+      "title":"Search engine advertising effectiveness in a multimedia campaign",
+      "year":"2014",
+      "author":["G. Zenetti","T. H. Bijmolt","P. S. Leeflang","D. Klaper"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-algo-buyback",
+      "title":"Selling banner ads: Online algorithms with buyback",
+      "year":"2008",
+      "authors":["Moshe Babaioff","Jason Hartline","Robert Kleinberg"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-clearing",
+      "title":"Expressive banner ad auctions and model-based online optimization for clearing",
+      "year":"2008",
+      "authors":["C. Boutilier","D. Parkes","T. Sandholm","W. Walsh"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-ad-slotting",
+      "title":"Online ad slotting with cancellations",
+      "year":"2008",
+      "authors":["Florin Constantin","Jon Feldman","S. Muthukrishnan","Martin Pal"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lst-squares-max-entr",
+      "title":"Why least squares and maximum entropy? an axiomatic approach to interference for linear inverse problems",
+      "year":"1991",
+      "authors":["I. Csiszar"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"comb-alloc-mec",
+      "title":"A combinatorial allocation mechanism with penalties for banner advertising",
+      "year":"2008",
+      "authors":["Uriel Feige","Nicole Immorlica","Vahab S. Mirrokni","Hamid Nazerzadeh"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"auct-bid",
+      "title":"Auctions and bidding",
+      "year":"1987",
+      "authors":["R. Preston McAfee","John McMillan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"converg-theo-diff",
+      "title":"A convergence theorem for competitive bidding with differential information",
+      "year":"1979",
+      "authors":["Paul R. Milgrom"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-disp-arch",
+      "title":"Optimize-and-dispatch architecture for expressive ad auctions",
+      "year":"2005",
+      "authors":["David Parkes"," Tuomas Sandholm"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"expr-com",
+      "title":"Expressive commerce and its application to sourcing",
+      "year":"2007",
+      "authors":["Tuomas Sandholm"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mod-perf-comp",
+      "title":"A bidding model of perfect competition",
+      "year":"1977",
+      "authors":["Robert Wilson"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"real-adx",
+      "title":"Getting real ad exchanges, RTB, and the future of online advertising",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"reserve-price-exp",
+      "title":"Reserve prices in internet advertising auctions: A field experiment",
+      "year":"2009",
+      "authors":["Michael Ostrovsky","Michael Schwarz"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"budg-opt-spons",
+      "title":"Budget optimization for sponsored search",
+      "year":"2012",
+      "authors":["K. Amin","M. Kearns","P. Key","A. Schwaighofer"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"hgh-freq-trad",
+      "title":"High-frequency trading in a limit order book",
+      "year":"2008",
+      "authors":["M. Avellaneda","S. Stoikov"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-contracts",
+      "title":"Optimal Contracts for Intermediaries in Online Advertising",
+      "year":"2015",
+      "authors":["S. Balseiro","O. Candogan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"yield-opt-adx",
+      "title":"Yield optimization of display advertising with ad exchange",
+      "year":"2014",
+      "authors":["S.R. Balseiro","J. Feldman","V. Mirrokni","S. Muthukrishnan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"snd-int-diff-eq",
+      "title":"Second-order elliptic integro-differential equations: viscosity solutions' theory revisited",
+      "year":"2008",
+      "authors":["G. Barles","C. Imbert"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"semiconc-fun",
+      "title":"Semiconcave functions, Hamilton-Jacobi equations, and optimal control",
+      "year":"2004",
+      "authors":["P. Cannarsa","C. Sinestrari"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-auct-rev",
+      "title":"Optimal auctions revisited",
+      "year":"1993",
+      "authors":["R. Engelbrecht-Wiggans"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"partial-diff-eq",
+      "title":"Partial differential equations",
+      "year":"1999",
+      "authors":["L.C. Evans"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"stat-mod-Vick",
+      "title":"Statistical modeling of Vickrey auctions and applications to automated bidding strategies",
+      "year":"2016",
+      "authors":["Joaquin Fernandez-Tapia"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"anal-budg-pacing",
+      "title":"An analytical solution to the budget-pacing problem in programmatic advertising",
+      "year":"2015",
+      "authors":["Joaquin Fernandez-Tapia"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"perf-prog-contracts",
+      "title":"On the pricing of performance-based programmatic ad buying contracts",
+      "year":"2016",
+      "authors":["Joaquin Fernandez-Tapia","Olivier Guéant","Jean-Michel Lasry"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rtb-strat-online",
+      "title":"Real-time bidding strategies with on-line learning",
+      "year":"2016",
+      "authors":["Joaquin Fernandez-Tapia","Olivier Guéant","Jean-Michel Lasry"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"inv-risk",
+      "title":"Dealing with inventory risk: a solution to the market making problem",
+      "year":"2013",
+      "authors":["Olivier Guéant","C.A. Lehalle","Joaquin Fernandez-Tapia"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-portfolio-liqu",
+      "title":"Optimal portfolio liquidation with limit orders",
+      "year":"2012",
+      "authors":["Olivier Guéant","C.A. Lehalle","Joaquin Fernandez-Tapia"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"feedback-ad",
+      "title":"Applications of feedback control in online advertising",
+      "year":"2013",
+      "authors":["N. Karlsson","J. Zhang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-res-price",
+      "title":"Optimal reservation price in the Vickrey auction",
+      "year":"1980",
+      "authors":["J.J. Laffont","E. Maskin"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"2ab-trust",
+      "title":"When can the two-armed bandit algorithm be trusted?",
+      "year":"2004",
+      "authors":["D. Lamberton","G. Pagès","P. Tarrès"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bandit-speed",
+      "title":"How fast is the bandit?",
+      "year":"2008",
+      "authors":["D. Lamberton","G. Pagès"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pen-bandit",
+      "title":"A penalized bandit algorithm",
+      "year":"2008",
+      "authors":["D. Lamberton","G. Pagès"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dsp-vs-adx",
+      "title":"Competition between Demand-Side intermediaries in ad exchanges",
+      "year":"2014",
+      "authors":["L.C. Stavrogiannis"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"counterspec-auct",
+      "title":"Counterspeculation, auctions, and competitive sealed tenders",
+      "year":"1961",
+      "authors":["W. Vickrey"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"supply-side-opt",
+      "title":"Supply Side Optimisation in Online Display Advertising (Doctoral dissertation)",
+      "year":"2015",
+      "authors":["S. Yuan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"seq-sel-corr-ads",
+      "title":"Sequential selection of correlated ads by POMDPS",
+      "year":"2012",
+      "authors":["S. Yuan","J. Wang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"feedback-cont",
+      "title":"Feedback control of real-time display advertising",
+      "year":"2016",
+      "authors":["W. Zhang","Y. Rong","J. Wang","T. Zhu","X. Wang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adx-des",
+      "title":"The design of advertising exchanges",
+      "year":"2011",
+      "authors":["R. P. Preston"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"post-click-conv",
+      "title":"Post-click conversion modeling and analysis for non-guaranteed delivery display advertising",
+      "year":"2012",
+      "authors":["R. Rosales","H. Cheng","E. Manavoglu"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"time-wgtd-mta-journey",
+      "title":"Time-weighted multi-touch attribution and channel relevance in the customer journey to online purchase",
+      "year":"2014",
+      "authors":["D. A. Wooff","J. M. Anderson"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"data-believe",
+      "title":"Data you can believe in.",
+      "year":"2013",
+      "authors":["J. Rutenberg"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"def-flood-attck",
+      "title":"Defending against flooding-based distributed denial-of-service attacks",
+      "year":"2002",
+      "authors":["R. K. Chang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"protect-dist-hist",
+      "title":"Protection from distributed denial of service attacks using history-based ip filtering",
+      "year":"2003",
+      "authors":["T. Peng","C. Leckie","K. Ramamohanarao"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"roc-analysis",
+      "title":"An introduction to ROC analysis",
+      "year":"2006",
+      "authors":["T. Fawcett"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"part-obs-sto",
+      "title":"Planning and acting in partially observable stochastic domains",
+      "year":"1998",
+      "authors":["L. P. Kaelbling","M. L. Littman","A. R. Cassandra"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-rl-pol",
+      "title":"Near-optimal reinforcement learning in polynomial time",
+      "year":"2002",
+      "authors":["M. Kearns","S. Singh"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ziggurat-meth",
+      "title":"The ziggurat method for generating random variables",
+      "year":"2000",
+      "authors":["G. Marsaglia"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cheetah",
+      "title":"Cheetah: a high performance, custome data warehouse on top of mapreduce",
+      "year":"2010",
+      "authors":["S. Chen"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"scale-dist-inf-behave",
+      "title":"Scalable distributed inference of dynamic user interest for behavioral targeting",
+      "year":"2011",
+      "authors":["A. Ahmed","Y. Low","M. Aly","V. Josifovski","A. J. Smola"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"emp-comp-sup",
+      "title":"An empirical comparison of supervised learning algorithms",
+      "year":"2006",
+      "authors":["R. Caruana","A. Niculescu-Mizil"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"simp-scale-pred-ad",
+      "title":"A simple and scalable response prediction for display advertising",
+      "year":"2013",
+      "authors":["Olivier Chapelle","E. Manavoglu","R. Rosales"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"transfer-naive-bayes",
+      "title":"Transferring naive bayes classifiers for text classification",
+      "year":"2007",
+      "authors":["W. Dai","G.R. Xue", "Q. Wang","Y. Yu"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pred-ads-facebook",
+      "title":"Practical lessons from predicting clicks on ads at facebook",
+      "year":"2014",
+      "authors":["X. He","J. Pan","O. Jin","T. Xu","B. Liu","T. Xu","Y. Shi","A. Atallah","R. Herbrich","S. Bowers","et al."],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"coll-filt-gauss-prob",
+      "title":"Collaborative filtering via gaussian probabilistic latent semantic analysis",
+      "year":"2003",
+      "authors":["T. Hofmann"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"discrim-gener",
+      "title":"Machine Learning: Discriminative and Generative",
+      "year":"2012",
+      "authors":["T. Jebara"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"3-idiots-approach",
+      "title":"3 idiots Approach for Display Advertising Challenge",
+      "year":"2011",
+      "authors":["Y.C. Juan","Y. Zhuang","W.S. Chin"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"matrix-fact-tech",
+      "title":"Matrix factorization techniques for recommender systems",
+      "year":"2009",
+      "authors":["Y. Koren","R. Bell","C. Volinsky"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"transfer-coll-filt",
+      "title":"Transfer learning for collaborative filtering via a rating-matrix generative model",
+      "year":"2009",
+      "authors":["B. Li","Q. Yang","X. Xue"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"log-reg-aux",
+      "title":"Logistic regression with an auxiliary data source",
+      "year":"2005",
+      "authors":["X. Liao","Y. Xue","L. Carin"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"feat-pair-asso-class",
+      "title":"A feature-pair-based associative classification approach to look-alike modeling for conversion-oriented user-targeting in tail campaigns",
+      "year":"2011",
+      "authors":["A. Mangalampalli","A; Ratnaparkhi","A.O. Hatch","A. Bagherjeiran","R. Parekh","V. Pudhi"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"fact-mach",
+      "title":"Factorization Machines",
+      "year":"2010",
+      "authors":["S. Rendle"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"item-coll-filt-recomm",
+      "title":"Item-based collaborative filtering recommendation algorithms",
+      "year":"2001",
+      "authors":["B. Sarwar","G. Karypis","J. Konstan","J. Riedl"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"coll-filt-recomm-sys",
+      "title":"Collaborative filtering recommender system",
+      "year":"2007",
+      "authors":["J.B. Schafer","D. Frankowski","J. Herlocker","S. Sen"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"transf-reing-survey",
+      "title":"Transfer learning for reinforcement learning domains: a survey",
+      "year":"2009",
+      "authors":["M.E. Taylor","P. Stone"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"unif-coll-filt",
+      "title":"Unifying user-based and item-based collaborative filtering approached by similarity fusion",
+      "year":"2006",
+      "authors":["J. Wang","A.P. De Vries","M.J. Reinders"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"behave-targ-help",
+      "title":"How much can behavioral targeting help online advertising?",
+      "year":"2009",
+      "authors":["J. Yan","N. Liu","G. Wang","W. Zhang","Y. Jiang","Z. Chen"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lasso-ctr-ad",
+      "title":"Coupled group lasso for web-scale ctr prediction in display advertising",
+      "year":"2014",
+      "authors":["L. Yan","W.J. Li","G.R. Xue","D. Han"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rtb-benchmark-ipinyou",
+      "title":"Real-time bidding benchmarking with ipinyou dataset",
+      "year":"2014",
+      "authors":["W. Zhang","S. Yuan","J. Wang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cnn-hybrid-nn-hmm",
+      "title":"Applying convolutional neural networks concepts to hybrid nn-hmm model for speech recognition",
+      "year":"2012",
+      "authors":["O. Abdel-Hamid","A-R. Mohammed","H. Jiang","G. Penn"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cnn-sentences",
+      "title":"A convolutional neural network for modelling sentences",
+      "year":"2014",
+      "authors":["N. Kalchbrenner","E. Grefenstette","P. Blunsom"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"imagenet-class-dp-cnn",
+      "title":"Imagenet classification with deep convolutional neural networks",
+      "year":"2011",
+      "authors":["A. Krizhevsky","I. Sutskever","G.E. Hinton"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"resp-pred-coll-filt",
+      "title":"Response prediction using collaborative filtering with hierarchies and side-information",
+      "year":"2011",
+      "authors":["A.K. Menon","K.-P. Chitrapura","S. Garg","D. Agarwal","N. Kota"],
+      "keywords":["online advertising","Yahoo!","collaborative filtering","response prediction","hierarchical constraints"],
+      "problematic":"Response prediction is the problem of estimating theprobability thatanadvertisement isclicked when displayed onacontentpublisher’swebpag",
+      "solution":"We show how response prediction can be viewed as a problem of matrix completion,and propose to solve it using matrix factorization techniques from collaborative ﬁltering(CF)",
+      "references":[]
+    },
+    {
+      "id":"fm-libfm",
+      "title":"Factorization machines with libfm",
+      "year":"2012",
+      "authors":["S. Rendle"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"soc-net-ctr-fm",
+      "title":"Social network and click-through prediction with factorization machines",
+      "year":"2012",
+      "authors":["S. Rendle"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"conv-pool-retrieval",
+      "title":"A latent semantic model with convolutional-pooling structure for information retrieval",
+      "year":"2014",
+      "authors":["Y. Shen","X. He","J. Gao","L. Deng","G. Mesnil"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"seq-pred-spon-recur-nn",
+      "title":"Sequential click prediction for sponsored search with recurrent neural networks",
+      "year":"2014",
+      "authors":["Y. Zhang","H. Dai","C. Xu","J. Feng","T. Wang","J. Bian","B. Wang","T.-Y. Liu"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-del-spon-budg",
+      "title":"Optimal delivery of sponsored search advertisements subject to budget constraints",
+      "year":"2007",
+      "authors":["Z. Abrams","O. Mendelevitch","J. Tomlin"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-allo-smooth",
+      "title":"Online allocation of display ads with smooth delivery",
+      "year":"2014",
+      "authors":["A. Bhalgat","J. Feldman","V. Mirrokni"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"partner-tiering",
+      "title":"Partner tiering in display advertising",
+      "year":"2014",
+      "authors":["A. Bhalgat","N. Korula","H. Leontyev","M. Lin","V. Mirrokni"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adaptive-control",
+      "title":"Adaptive Control: Algorithms, Analysis and Applications",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adwords-matching",
+      "title":"Adwords and generalized online matching",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"inter-model-emp-anal",
+      "title":"Understanding interaction models, improving empirical analysis",
+      "year":"2006",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mem-algo-bound-opt",
+      "title":"A limited memeory algorithm for bound constrained optimization",
+      "year":"1995",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-sto-pack",
+      "title":"Online Stochastic packing applied to display ad allocation",
+      "year":"2010",
+      "authors":["J. Feldman","M. Henzinger","N. Korula","V.S. Mirrokni","C. Stein"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-sto-match",
+      "title":"Online stochastic matching: Beating 1-1",
+      "year":"2009",
+      "authors":["J. Feldman","A. Mehta","V.S. Mirrokni"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cens-data-trunc-dist",
+      "title":"Censored data and truncated distributions",
+      "year":"2005",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-bipartite-match",
+      "title":"An optimal algorithm for on-line bipartite matching",
+      "year":"1990",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"survival-analysis",
+      "title":"Survival Analysis: Techniques for Censored and Truncated Data",
+      "year":"2003",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ad-pred-trenches",
+      "title":"Ad click prediction: a view from the trenches",
+      "year":"2013",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"price-ext-rtb",
+      "title":"Pricing externalities in real-time bidding markets",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"like-est-cens-rand",
+      "title":"Likelihood estimation for censored random vectors",
+      "year":"2005",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"est-rela-limit-dep",
+      "title":"Estimation of relationships for limited dependent variables",
+      "year":"1956",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rtb-frontier",
+      "title":"Real-time bidding: A new frontier of computational advertising research",
+      "year":"2013",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"loss-funct-pred-ctr",
+      "title":"Loss functions for predicted click through rates in auctions for online advertising",
+      "year":"2013",
+      "authors":["P. Hummel","R.P. McAfee"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ctr-pred-twitter",
+      "title":"Click-through prediction for advertising in twitter timeline",
+      "year":"2015",
+      "authors":["C. Li","Y. Lu","Q. Mei","D. Wang","S. Pandey"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cost-sens-cost-prop",
+      "title":"Cost-sensitive learning by cost-proportionate example weigthing",
+      "year":"2003",
+      "authors":["B. Zadrozny","J. Langford","N. Abe"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"noise-tol-learn",
+      "title":"Efficient noise-tolerant learning from statistical queries",
+      "year":"1998",
+      "authors":["M. Kearns"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cost-sens-foundations",
+      "title":"The foundations of cost-sensitive learning",
+      "year":"2001",
+      "authors":["C. Elkan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lim-mem-bfgs",
+      "title":"On the limited memory bfgs method for large scale optimization",
+      "year":"1989",
+      "authors":["D.C. Liu","J. Nocedal"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"variab-lscale-ml",
+      "title":"Sources of variability in large-scale machine learning systems",
+      "year":"2015",
+      "authors":["D. Lefortier","A. Truchet","M. De Rijke"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"quasi-newton-mat",
+      "title":"Updating quasi-newton matrices with limited storage",
+      "year":"1980",
+      "authors":["J. Nocedal"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-imp-weight-aware-updates",
+      "title":"Online importance weight awares updates",
+      "year":"2010",
+      "authors":["N. Karampatziajis","J. Langford"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"massive-datasets",
+      "title":"Handbook of Massive Data Sets",
+      "year":"2002",
+      "authors":["J. Abello","P.M. Pardalos","M.G. Resende"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"web-scale-user-targ",
+      "title":"Web-scale user modeling for targeting",
+      "year":"2012",
+      "authors":["M. Aly","A. Hatch","V. Josifovski","V.K. Narayanan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-ad-industry",
+      "title":"The online advertising industry: economics, evolution, and privacy",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"greedy-approx-gbm",
+      "title":"Greedy function approximation: a gradient boosting machine",
+      "year":"2001",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"sponsored-search",
+      "title":"Sponsored search: an overview of the concept, history, and technology",
+      "year":"2008",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mult-dim-maj",
+      "title":"Multidimensional scaling using majorization: SMACOF",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ftrl-mirror-descent",
+      "title":"Follow-The-Regularized-Leader and mirror descent: equivalence theorems and L1 regularization",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"sup-mult-dim-scale",
+      "title":"Supervised multidimensional scaling for visualization, classification, and bipartite ranking",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"organic-vs-spons-search",
+      "title":"Analyzing the relationship between organic and sponsored search advertising: positive, negative or zero interdependence?",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"vicinal-risk",
+      "title":"Vicinal risk minimization",
+      "year":"2001",
+      "authors":["O. Chapelle","J. Weston","L. Bottou","V. Vapnik"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"learn-marg-corrupt",
+      "title":"Learning with marginalized corrupted features",
+      "year":"2013",
+      "authors":["L. Maaten","M. Chen","S. Tyree","K.Q. Weinberger"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pred-perf-offl-onl",
+      "title":"Predictive model performance: Offline and online evaluations",
+      "year":"2013",
+      "authors":["J. Yi","Y. Chen","J. Li","S. Sett","T.W. Yan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ad-serv-comp-allo",
+      "title":"Ad serving using a compact allocation plan",
+      "year":"2012",
+      "authors":["P. Chen","W. Ma","S. Manalapu","C. Nagarajan","S. Vassilvitskii"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-key-match",
+      "title":"The adwords problem: online keyword matching with budgeted bidders under random permutations",
+      "year":"2009",
+      "authors":["N.R. Devanur","T. P. Hayes"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-ad-serv-exch",
+      "title":"Efficient online ad serving in a display advertising exchange",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-onl-assign-forecasts",
+      "title":"Optimal online assignment with forecasts",
+      "year":"2010",
+      "authors":["E. Vee","S. Vassilvitskii","J. Shanmugasundaram"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"spatio-temp-ctr",
+      "title":"Spatio-temporal models for estimating click-through rate",
+      "year":"2009",
+      "authors":["D. Agarwal","B.-C. Chen","P. Elango"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mult-dim-scale-eckart",
+      "title":"Analysis of individual differences in multidimensional scaling via an n-way generalization of eckart-young decomposition",
+      "year":"1970",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"comb-fact-add-forest",
+      "title":"Combining factorization model and additive forest for collaborative followee recommendation",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"mult-lin-sing-val-decomp",
+      "title":"A multilinear singular value decomposition",
+      "year":"2000",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"roc-graphs",
+      "title":"ROC graphs: notes and practical considerations for researchers",
+      "year":"2004",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bayes-ctr-pred",
+      "title":"Web-scale bayesian click-through rate prediction for sponsored search advertising in microsoft's bing search engine",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"parafac-proced",
+      "title":"Foundations of the parafac procedure: models and conditions for an 'exploratory' multimodal factor analysis",
+      "year":"1970",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"recommender-systems",
+      "title":"Recommender Systems",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"tensor-fact-tag-recom",
+      "title":"Pairwise interaction tensor factorization for personalized tag recommendation",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bayes-rank-feedback",
+      "title":"Bayesian personalized ranking from implicit feedback",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-rank-fact-recom",
+      "title":"Learning optimal ranking with tensor factorization for tag recommendation",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ctr-pred-cube-fact",
+      "title":"CTR prediction for DSP with Improved Cube Factorization Model from Historical Bidding Log",
+      "year":"2014",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"clk-mod-cf",
+      "title":"Personalized click model through collaborative filtering",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"tag-recom-tens-dim-reduc",
+      "title":"Tag recommendations based on tensor dimensionality reduction",
+      "year":"2008",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"3mode-factor-anal",
+      "title":"Some mathematical notes on three-mode factor analysis",
+      "year":"1966",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ctr-rare-events-ad",
+      "title":"Click-through rate estimation for rare events in online advertising",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"2stage-ad-rank",
+      "title":"A two-stage ensemble of diverse models for advertisement ranking",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"stochastic-mab",
+      "title":"Stochastic Multi-Armed Bandit Algorithm for Optimal Budget Allocation in Programmatic Advertising",
+      "year":"2015",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"survey-rtb",
+      "title":"A survey on real-time bidding advertising",
+      "year":"2014",
+      "authors":["S. Yuan","J. Wang","X. Zhao"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"terascale-lin-learn",
+      "title":"A reliable effective terascale linear learning system",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-algo-stoch-approx",
+      "title":"Online algorithms and stochastic approximations",
+      "year":"1998",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-batch-for-back-split",
+      "title":"Efficient online and batch learning using forward backward splitting",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dual-av-methods",
+      "title":"Dual averaging methods for regularized stochastic learning and online optimization",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ls-dist-deep-net",
+      "title":"Large scale distributed deep networks",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-bid-algo-rtb",
+      "title":"Optimized bidding algorithm of real time bidding in online ads auction",
+      "year":"2014",
+      "authors":["C.R. Zhang","E. Zhang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rtb-look-alike-segm",
+      "title":"Real-time bidding across look-alike segments",
+      "year":"2015",
+      "authors":["Joaquin Fernandez-Tapia"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"surrogate-train",
+      "title":"Surrogate training for online conversion modeling",
+      "year":"2012",
+      "authors":["Brian Dalessandro","Foster Provost","Claudia Perlich","R. Hook"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"strat-behave-spons",
+      "title":"Strategic bidder behavior in sponsored search auctions",
+      "year":"2005",
+      "authors":["B. Edelman","M. Ostrovsky"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lscale-bayes-log-reg",
+      "title":"Large-scale bayesian logistic regression for text categorization",
+      "year":"2007",
+      "authors":["A. Genkin","D.D. Lewis","D. Madigan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"log-reg-rare-events",
+      "title":"Logistic regression in rare events data",
+      "year":"2001",
+      "authors":["G. King","L. Zeng"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-bid-keyword",
+      "title":"Optimal bidding on keyword auctions",
+      "year":"2004",
+      "authors":["B. Kitts","B. LeBlanc"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"data-mining-ad-sys",
+      "title":"Data mining problems in internet ad systems",
+      "year":"2011",
+      "authors":["M. Muthukrishnan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"semiparametric-theo",
+      "title":"Semiparametric theory and missing data",
+      "year":"2006",
+      "authors":["A.A. Tsiatis"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rel-clk-pred",
+      "title":"Relational click prediction for sponsored search",
+      "year":"2012",
+      "authors":["C. Xiong","T. Wang","W. Ding","Y. Shen","T.Y. Liu"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"eff-sch-ad",
+      "title":"Efficient scheduling of Internet banner advertisements",
+      "year":"2003",
+      "authors":["A. Amiri","s. Menon"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"val-behave-targ",
+      "title":"The value of behavioral targeting",
+      "year":"2011",
+      "authors":["H. Beales"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"unique-browser",
+      "title":"How unique is your web browser?",
+      "year":"2009",
+      "authors":["P. Echersley"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"priv-diff",
+      "title":"Privacy diffusion on the web: a longitudinal perspective",
+      "year":"2009",
+      "authors":["B. Krishanmurthy","C. Wills"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"tim-info-spe-ad",
+      "title":"When does retargeting work? Timing information specificity in online advertising",
+      "year":"2012",
+      "authors":["A. Lambrecht","C. Tucker"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"unintrusive-cost-tech",
+      "title":"Unintrusive customization techniques for Web advertising",
+      "year":"1999",
+      "authors":["M. Langheinrich","A. Nakamura","N. Abe","T. Kamba","Y. Koseki"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"eff-behave-net",
+      "title":"Efficient behavior of small-world networks",
+      "year":"2001",
+      "authors":["V. Latora","M. Marchiori"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"int-web-usage",
+      "title":"Integrating Web usage and content mining for more effective personalization",
+      "year":"2000",
+      "authors":["B. Mobasher","H. Dai","T. Luo","Y. Sun","J. Zhu"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"renorm-grp-anal",
+      "title":"Renormilization group analysis of the small-world network model",
+      "year":"1999",
+      "authors":["M.E.J. Newman","D.J. Watts"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"scale-and-percol",
+      "title":"Scaling and percolation in the small-world network model",
+      "year":"1999",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"your-data-sale",
+      "title":"For sale: your data by you",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"detect-def-3party-track",
+      "title":"Detecting and defending against third-party tracking on the Web",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"entropy-appr-targ",
+      "title":"An entropy approach to unintrusive targeted advertising",
+      "year":"2000",
+      "authors":["J.A. Tomlin"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"privacy-preserv-targ-ad",
+      "title":"Privacy perserving targeted advertising",
+      "year":"2010",
+      "authors":["V. Toubiana","A. Narayanan","D. Boneh","H. Nissenbaum","S. Barocas"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"percept-onl-behave-targ",
+      "title":"Smart useful, scary, creepy: perceptions of online behavioral advertising",
+      "year":"2012",
+      "authors":["B. Ur","P.G. Leon","L.F. Cranor","R. Shay","Y. Wang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"feedback-systems",
+      "title":"Feedback Systems: An Introduction for Scientists and Engineers",
+      "year":"2008",
+      "authors":["K.J. Astrom","R.M. Murray"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lopsided-bipartite-graph-algo",
+      "title":"Fast aglorithms for finding matchings in lopsided bipartite graphs with applications to display ads",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solutiont":"",
+      "references":[]
+    },
+    {
+      "id":"modern-control-tech",
+      "title":"Modern Controle Technology",
+      "year":"2005",
+      "authors":["C. Killian"],
+      "problematic":"",
+      "solutiont":"",
+      "references":[]
+    },
+    {
+      "id":"auct-theo-lit",
+      "title":"Auction theory: a guide to the litterature",
+      "year":"1999",
+      "authors":[],
+      "problematic":"",
+      "solutiont":"",
+      "references":[]
+    },
+    {
+      "id":"opt-bypass-cream",
+      "title":"Optimal bypass and cream skimming",
+      "year":"1999",
+      "authors":[],
+      "problematic":"",
+      "solutiont":"",
+      "references":[]
+    },
+    {
+      "id":"truth-auct-opt-profit",
+      "title":"Truthful auctions with optimal profit",
+      "year":"1999",
+      "authors":["P. Lu","S. Teng Hua","C. Yu"],
+      "problematic":"",
+      "solutiont":"",
+      "references":[]
+    },
+    {
+      "id":"quasi-prop-mech",
+      "title":"Quasi-proportional mechanisms: prior-free revenue maximization",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solutiont":"",
+      "references":[]
+    },
+    {
+      "id":"shale-algo",
+      "title":"SHALE: an efficient algorithm for allocation of guaranteed display advertising",
+      "year":"2012",
+      "authors":["Vijay Bharadwaj","Peiji Chen","Wenjing Ma","Chandrashekhar Nagarajan","John Tomlin","Sergei Vassilvitskii","Erik Vee","Jian Yang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"evol-algo",
+      "title":"Evolutionary algorithms in theory and practice: evolution strategies, evolutionary programming, genetic algorithms",
+      "year":"1996",
+      "authors":["T. Bäck"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"tensor-decomp",
+      "title":"Tensor decompositions, alternating least squares and other tales",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cf-temp",
+      "title":"Collaborative filtering with temporal dynamics",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"spatio-temp-cf",
+      "title":"A spatio-temporal approach to collaborative filtering",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"scale-fm",
+      "title":"Scaling factorization machines to relational data",
+      "year":"2013",
+      "authors":["S. Rendle"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"comb-reg-rank",
+      "title":"ombined regression and ranking",
+      "year":"2010",
+      "authors":["D. Sculley"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"stoch-l1-reg-loss",
+      "title":"Stochastic methods for l1 regularized loss minimization",
+      "year":"2009",
+      "authors":[""],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"plant-kingdom-pred-fm",
+      "title":"Gap filling in the plant kingdom-trait prediction using hierarchical probabilistic matrix factorization",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"max-mf",
+      "title":"Maximum-margin matrix factorization",
+      "year":"2005",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dyn-mf",
+      "title":"Dynamic matrix factorization",
+      "year":"2012",
+      "authors":[""],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"ind-comp-rank",
+      "title":"Individual comparisons by ranking methods",
+      "year":"1945",
+      "authors":["F. Wilcoxon"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"cont-cf-hier-mf",
+      "title":"Contextual collaborative filtering via hierarchical matrix factorization",
+      "year":"2012",
+      "authors":["E. Zhong","W. Fan","Q. Yang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"comp-ad-linkedin",
+      "title":"Computational advertising: The linkedin way",
+      "year":"2013",
+      "authors":["D. Agarwal"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"forecast-high-dim-data",
+      "title":"Forecasting high-dimensional data",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"infra-linkedin",
+      "title":"Data infrastructure at LinkedIn",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"budg-opt-search-ad",
+      "title":"Budget optimization in search-based advertising auctions",
+      "year":"2006",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"onl-budg-random-adwords",
+      "title":"Online budgeted matching in random input models with applications to adwords",
+      "year":"2008",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rev-anal-rules",
+      "title":"Revenue analysis of a family of ranking rules for keyword auction",
+      "year":"2007",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"game-theo-spon-auct",
+      "title":"Algorithmic Game Theory, Chapter: Sponsored Search Auctions",
+      "year":"1986",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-query-sub",
+      "title":"Optimizing relevance and revenue in ad search",
+      "year":"2008",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adapt-alg-keywords",
+      "title":"An adaptive algorithm for selecting profitable keywords for search based advertising services",
+      "year":"2006",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bigdata-linkedin",
+      "title":"The big data ecosystem at LinkedIn",
+      "year":"2013",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"price-guar-contracts",
+      "title":"Pricing guaranteed contracts in online display advertising",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-equ-bid-strat",
+      "title":"Optimal equilibrium bidding strategies for budget constrained bidders in sponsored search auctions",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dyn-price-model-rtb",
+      "title":"A dynamic pricing model for unifying programmatic guarantee and real-time bidding in display advertising",
+      "year":"2014",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pairs-trading",
+      "title":"Pairs trading: Performance of a relative-value arbitrage rule",
+      "year":"2006",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"market-eff-sa",
+      "title":"Testing market efficiency using statistical arbitrage with applications to momentum and value strategies",
+      "year":"2004",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"perf-price-ad",
+      "title":"Performance-based pricing models in online advertising",
+      "year":"2004",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"offline-eval-context-bandit",
+      "title":"Unbiased offline evaluation of contextual-bandit-based news article recommendation algorithms",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"overview-exchange-des",
+      "title":"An overview of practical exchange design",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"joint-opt-budg-allo",
+      "title":"Joint optimization of bid and budget allocation in sponsored search",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"comp-price-disc-mech",
+      "title":"Group buying on the web: A comparison of price-discovery mechanisms",
+      "year":"2003",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"minim-derivatives",
+      "title":"Algorithms for minimization without derivatives",
+      "year":"1973",
+      "authors":["R. P. Brent"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"primal-dual-max-ad",
+      "title":"Online primal-dual algorithms for maximizing ad-auctions revenue",
+      "year":"2007",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dayly-deal",
+      "title":"Daily deals: PRediction, social diffusion, and reputational ramifications",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"groupon-yelp-effect",
+      "title":"The groupon effect on yelp ratings: a root cause analysis",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"strat-groupbuy",
+      "title":"Bidder's strategy under group-buying auction on the internet",
+      "year":"2002",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"social-choices-roles",
+      "title":"The implementation of social choice rules: some general results on incentive compatibility",
+      "year":"1979",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adapt-policies-groupon",
+      "title":"Adaptive policies for selecting groupon style chunked reward ads in a stochastic knapsack framework",
+      "year":"2011",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"daily-select-rev-max",
+      "title":"Daily-deal selection for revenue maximization",
+      "year":"2012",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"prob-stat-eng",
+      "title":"Probability and statistics for engineers",
+      "year":"1965",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"point-process-ad",
+      "title":"Path to Purchase: A Mutually Exciting Point Process Model for Online Advertising and Conversion",
+      "year":"2012",
+      "authors":["Lizhen Xu","Jason A. Duan","Andrew Whinston"],
+      "keywords":["online advertising","purchase conversion","search advertisement","display advertisement","point process","mutually exciting"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dec-trees-case-learn",
+      "title":"Using decision trees to improve case-based learning",
+      "year":"1993",
+      "authors":["C. Cardie"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"max-incomp-em",
+      "title":"Maximum likelihood from incomplete data via the EM algorithm",
+      "year":"1977",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"sgd",
+      "title":"Stochastic Gradient Descent",
+      "year":"1999",
+      "authors":["J. H. Friedman"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"feature-selection",
+      "title":"A practical approach to feature selection",
+      "year":"1992",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"finite-mixture-models",
+      "title":"Finite Mixture Models",
+      "year":"2000",
+      "authors":["G. J. McLachlan","D. Peel"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"forecast-context-ad",
+      "title":"A search-based method for forecasting ad impression in contextual advertising",
+      "year":"2009",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"inv-allo-onl-graph",
+      "title":"Inventory allocation for online graphical display advertising",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"feat-select-high-dim",
+      "title":"Feature selection for high-dimensional data: A fast correlation-based filter solution",
+      "year":"2003",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"svn",
+      "title":"Support-Vector Networks",
+      "year":"1995",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"exploit-explo-perf",
+      "title":"Exploitation and Exploration in a Performance Based Contextual Advertising System",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"webpage-class",
+      "title":"Sensitive Webpage Classification for Content Advertising",
+      "year":"2007",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"neural-net",
+      "title":"Neural Networks for Pattern Recognition",
+      "year":"1996",
+      "authors":["C.M. Bishop"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"pattern-recogn",
+      "title":"Pattern Recognition",
+      "year":"2007",
+      "authors":["C.M. Bishop"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bagging-predictors",
+      "title":"Bagging Predictors",
+      "year":"1996",
+      "authors":["L. Breiman"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"random-forests",
+      "title":"Random Forests",
+      "year":"2001",
+      "authors":["L. Breiman"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"tree-induc-log-reg",
+      "title":"Tree Induction vs Logistic Regression: A learning-curve analysis",
+      "year":"2003",
+      "authors":["C. Perlich","F. Provost","J.S. Simonoff"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"bayes-inf-tobit-cens",
+      "title":"Bayes inference in the tobit censored regression model",
+      "year":"1992",
+      "authors":["Chib Siddartha"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"res-inf-reg",
+      "title":"Residuals and Influence in Regression",
+      "year":"1982",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dirichlet-process-mixt",
+      "title":"Dirichlet process mixtures of generalized linear models",
+      "year":"2010",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"dyn-arch-tobit",
+      "title":"Estimation of dynamic and arch tobit models",
+      "year":"1999",
+      "authors":["Lee Lung-fei"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"rtb-digital-ad",
+      "title":"Real Time Bidding in Online Digital Advertisement",
+      "year":"2015",
+      "authors":["Shalinda Adikari","Kaushik Dutta"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"interactive-cf",
+      "title":"Interactive Collaborative Filtering",
+      "year":"2013",
+      "authors":["Weinan Zhang","Xiaoxue Zhao","Jun Wang"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"lambdafm",
+      "title":"LambdaFM: Learning Optimal Ranking with Factorization Machines Using Lambda Surrogates",
+      "year":"2016",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-ctr-bid",
+      "title":"User Response Learning for Directly Optimizing Campaign Performance in Display Advertising",
+      "year":"2016",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"gd-learn-cens-ad",
+      "title":"Bid-aware Gradient Descent for Unbiased Learning with Censored Data in Display Advertising ",
+      "year":"2016",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"coll-noise-tsfl",
+      "title":"Collective Noise Contrastive Estimation for Policy Transfer Learning ",
+      "year":"2016",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-budg-chan-inf",
+      "title":"Optimizing budget allocation among channels and influencers",
+      "year":"2012",
+      "authors":["N. ALon","I. Gamzu","M. Tennenholtz"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"budg-opt-carryover",
+      "title":"Budget optimization for online advertising campaigns with carryover effects",
+      "year":"2010",
+      "authors":["N. Archak","V.S. Mirrokni","S. Muthukrishnan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"opt-budg-keyword-ads",
+      "title":"Optimal budget allocation over time for keyword ads in web portals",
+      "year":"2005",
+      "authors":["G.E. Fruchter","W. Dou"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"allo-expend-keywords",
+      "title":"Allocating expenditures across keywords in search advertising",
+      "year":"2007",
+      "authors":["O. Ozluk","S. Cholette"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"n-person-games",
+      "title":"A value for n-person games",
+      "year":"1953",
+      "authors":["L.S. Shapley"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"time-bsd-ad-eff",
+      "title":"Improving the effectiveness of time-based display advertising",
+      "year":"2012",
+      "authors":["D.G. Goldstein","R.P. McAfee","S. Suri"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"adx-model",
+      "title":"AdX: A model for ad exchanges",
+      "year":"2009",
+      "authors":["S. Muthukrishnan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"region-chinese-ads",
+      "title":"Regional analysis on chinese internet ads with click-through rates",
+      "year":"2010",
+      "authors":["W. Li","Q. Wei","Y. Chen"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"comput-chal-onl-ad",
+      "title":"An overview of computational challenges in online advertising",
+      "year":"2013",
+      "authors":["R.E. Chatwin"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"expressive-auct-des",
+      "title":"An expressive auction design for online display advertising",
+      "year":"2008",
+      "authors":["S. Lahaie","D. Parkes","D. Pennock"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"callout-opt",
+      "title":"Callout optimization",
+      "year":"2009",
+      "authors":["T. Chakraborty","E. Even-Dar","S. Guha","Y. Mansour","S. Muthukrishnan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"market-microstruct",
+      "title":"Market microstructure: A survey",
+      "year":"2000",
+      "authors":["A. Madhavan"],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    },
+    {
+      "id":"",
+      "title":"",
+      "year":"",
+      "authors":[],
+      "problematic":"",
+      "solution":"",
+      "references":[]
+    }
+  ],
+  "thesis":[
+    {
+      "id":"weinan-zhang-phd-2016",
+      "title":"Optimal Real-Time Bidding for Display Advertising",
+      "year":"2016",
+      "author":"Weinan Zhang",
+      "contributors":[],
+      "score":"",
+      "keywords":[],
+      "summary":"",
+      "problematic":"",
+      "hypothesis":"",
+      "solution":"",
+      "references":["ctr-est","forget-click","cvr-est","post-click-conv","sell-billions-dollars-keywords","scale-dist-inf-behave","rtb-analysis","adx-issues","post-click-conv","lin-bid","rtb-perf","fm-ctr","bid-lands","budg-opt-spons","rtb-benchmark-ipinyou","dyn-rev-manag","onl-allo-smooth","onl-sto-pack","shale-algo"]
+    }
+  ]
+}
