@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="d3@3.5.17" data-semver="3.5.17" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+  <style>
+    path.link {
+      fill: none;
+      stroke: #666;
+      stroke-width: 1.5px;
+    }
+    
+    circle {
+      fill: #ccc;
+      stroke: #fff;
+      stroke-width: 1.5px;
+    }
+    
+    text {
+      fill: #000;
+      font: 10px sans-serif;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    var links = [{
+      "source": "Harry",
+      "target": "Sally",
+      "value": "1.2"
+    }, {
+      "source": "Harry",
+      "target": "Mario",
+      "value": "1.3"
+    }, {
+      "source": "Sarah",
+      "target": "Alice",
+      "value": "0.2"
+    }, {
+      "source": "Eveie",
+      "target": "Alice",
+      "value": "0.5"
+    }, {
+      "source": "Peter",
+      "target": "Alice",
+      "value": "1.6"
+    }, {
+      "source": "Mario",
+      "target": "Alice",
+      "value": "0.4"
+    }, {
+      "source": "James",
+      "target": "Alice",
+      "value": "0.6"
+    }, {
+      "source": "Harry",
+      "target": "Carol",
+      "value": "0.7"
+    }, {
+      "source": "Harry",
+      "target": "Nicky",
+      "value": "0.8"
+    }, {
+      "source": "Bobby",
+      "target": "Frank",
+      "value": "0.8"
+    }, {
+      "source": "Alice",
+      "target": "Mario",
+      "value": "0.7"
+    }, {
+      "source": "Harry",
+      "target": "Alice",
+      "value": "0.5"
+    }, {
+      "source": "Sarah",
+      "target": "Alice",
+      "value": "1.9"
+    }, {
+      "source": "Roger",
+      "target": "Alice",
+      "value": "1.1"
+    }];
+
+    var nodes = {};
+
+    // Compute the distinct nodes from the links.
+    links.forEach(function(link) {
+      link.type = "dominating";
+      link.source = nodes[link.source] || (nodes[link.source] = {
+        name: link.source
+      });
+      link.target = nodes[link.target] || (nodes[link.target] = {
+        name: link.target
+      });
+    });
+
+    var width = 500,
+      height = 500;
+
+    var force = d3.layout.force()
+      .nodes(d3.values(nodes))
+      .links(links)
+      .size([width, height])
+      .linkDistance(300)
+      .charge(-120)
+      .friction(0.9)
+      .on("tick", tick)
+      .start();
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    // Per-type markers, as they don't inherit styles.
+    svg.append("defs").selectAll("marker")
+      .data(["dominating"])
+      .enter().append("marker")
+      .attr("id", function(d) {
+        return d;
+      })
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 0)
+      .attr("refY", 0)
+      .attr("markerWidth", 12)
+      .attr("markerHeight", 12)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5");
+
+    svg.append("defs").selectAll("marker")
+      .data(["concomidant"])
+      .enter().append("marker")
+      .attr("id", function(d) {
+        return d;
+      })
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 0)
+      .attr("refY", 0)
+      .attr("markerWidth", 12)
+      .attr("markerHeight", 12)
+      .attr("orient", "auto-start-reverse")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5");
+
+    var path = svg.append("g").selectAll("path")
+      .data(force.links())
+      .enter().append("path")
+      .attr("class", function(d) {
+        return "link " + d.type;
+      })
+      .attr("marker-end", function(d) {
+        return "url(#" + d.type + ")";
+      })
+      .attr("marker-start", function(d) {
+        if (d.type == "concomidant") {
+          return "url(#" + d.type + ")";
+        }
+      });
+
+
+    var circle = svg.append("g").selectAll("circle")
+      .data(force.nodes())
+      .enter().append("circle")
+      .attr("r", function(d) {
+        return d.weight * 4;
+      })
+      .call(force.drag);
+
+    var text = svg.append("g").selectAll("text")
+      .data(force.nodes())
+      .enter().append("text")
+      .attr("x", 8)
+      .attr("y", ".31em")
+      .text(function(d) {
+        return d.name;
+      });
+
+    function tick() {
+      path.attr("d", function(d){
+        var dx = d.target.x - d.source.x,
+            dy = d.target.y - d.source.y,
+            dr = Math.sqrt(dx * dx + dy * dy);
+        return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
+      });
+      path.attr("d", function(d) {
+        var pl = this.getTotalLength(),
+          r = (d.target.weight) * 4 + 16.97, //16.97 is the "size" of the marker Math.sqrt(12**2 + 12 **2)
+          m = this.getPointAtLength(pl - r);
+
+         var dx = m.x - d.source.x,
+            dy = m.y - d.source.y,
+            dr = Math.sqrt(dx * dx + dy * dy);
+
+          return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + m.x + "," + m.y;
+      });
+      circle.attr("transform", transform);
+      text.attr("transform", transform);
+    }
+    
+
+    function transform(d) {
+      return "translate(" + d.x + "," + d.y + ")";
+    }
+  </script>
+</body>
+
+</html>
